@@ -1,0 +1,28 @@
+{
+  "avg_a_config_distance": 0.9711,
+  "avg_a_result_distance_score": 13.0089,
+  "by_kernel": {
+    "atax": 36,
+    "bicg": 46,
+    "gemm": 171
+  },
+  "exact_edit_groups": 6350,
+  "exact_edit_groups_with_both_labels": 1031,
+  "input": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\all_edit_preferences.jsonl",
+  "matched_pairs": 253,
+  "output": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_causal_matched_pairs.jsonl",
+  "schema": {
+    "allowed_inputs": [
+      "A_config",
+      "A_result",
+      "candidate_edit"
+    ],
+    "forbidden_inputs": [
+      "B_result",
+      "B_status",
+      "B_latency",
+      "B_resource",
+      "target_result"
+    ]
+  }
+}

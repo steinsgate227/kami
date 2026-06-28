@@ -1,0 +1,401 @@
+{
+  "by_kernel": {
+    "atax": 450,
+    "bicg": 360,
+    "gemm": 590,
+    "gemm_blocked": 220
+  },
+  "contrasts": 810,
+  "examples": 1620,
+  "input": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_dependency_contrasts.jsonl",
+  "splits": {
+    "config_isolated": {
+      "feature_sets": {
+        "a_config_edit": {
+          "num_features": 56,
+          "test": {
+            "accuracy": 0.7458,
+            "confusion_matrix": {
+              "fn": 84,
+              "fp": 21,
+              "tn": 162,
+              "tp": 146
+            },
+            "count": 413,
+            "f1": 0.7355,
+            "roc_auc": 0.8782
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 48,
+            "ranking_accuracy": 0.9792
+          },
+          "train": {
+            "accuracy": 0.9743,
+            "confusion_matrix": {
+              "fn": 11,
+              "fp": 20,
+              "tn": 607,
+              "tp": 569
+            },
+            "count": 1207,
+            "f1": 0.9735,
+            "roc_auc": 0.9986
+          }
+        },
+        "a_result_edit": {
+          "num_features": 82,
+          "test": {
+            "accuracy": 0.7385,
+            "confusion_matrix": {
+              "fn": 83,
+              "fp": 25,
+              "tn": 158,
+              "tp": 147
+            },
+            "count": 413,
+            "f1": 0.7313,
+            "roc_auc": 0.8392
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 48,
+            "ranking_accuracy": 0.9792
+          },
+          "train": {
+            "accuracy": 0.9644,
+            "confusion_matrix": {
+              "fn": 21,
+              "fp": 22,
+              "tn": 605,
+              "tp": 559
+            },
+            "count": 1207,
+            "f1": 0.963,
+            "roc_auc": 0.9972
+          }
+        },
+        "edit_only": {
+          "num_features": 44,
+          "test": {
+            "accuracy": 0.7191,
+            "confusion_matrix": {
+              "fn": 82,
+              "fp": 34,
+              "tn": 149,
+              "tp": 148
+            },
+            "count": 413,
+            "f1": 0.7184,
+            "roc_auc": 0.8448
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 48,
+            "ranking_accuracy": 0.9792
+          },
+          "train": {
+            "accuracy": 0.9602,
+            "confusion_matrix": {
+              "fn": 22,
+              "fp": 26,
+              "tn": 601,
+              "tp": 558
+            },
+            "count": 1207,
+            "f1": 0.9588,
+            "roc_auc": 0.9953
+          }
+        },
+        "full": {
+          "num_features": 115,
+          "test": {
+            "accuracy": 0.77,
+            "confusion_matrix": {
+              "fn": 73,
+              "fp": 22,
+              "tn": 161,
+              "tp": 157
+            },
+            "count": 413,
+            "f1": 0.7677,
+            "roc_auc": 0.8728
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 48,
+            "ranking_accuracy": 0.9792
+          },
+          "train": {
+            "accuracy": 0.976,
+            "confusion_matrix": {
+              "fn": 11,
+              "fp": 18,
+              "tn": 609,
+              "tp": 569
+            },
+            "count": 1207,
+            "f1": 0.9751,
+            "roc_auc": 0.9988
+          }
+        },
+        "shuffled_a_result": {
+          "num_features": 94,
+          "test": {
+            "accuracy": 0.7433,
+            "confusion_matrix": {
+              "fn": 84,
+              "fp": 22,
+              "tn": 161,
+              "tp": 146
+            },
+            "count": 413,
+            "f1": 0.7337,
+            "roc_auc": 0.8809
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 48,
+            "ranking_accuracy": 0.9792
+          },
+          "train": {
+            "accuracy": 0.9834,
+            "confusion_matrix": {
+              "fn": 8,
+              "fp": 12,
+              "tn": 615,
+              "tp": 572
+            },
+            "count": 1207,
+            "f1": 0.9828,
+            "roc_auc": 0.9991
+          }
+        }
+      },
+      "split_summary": {
+        "name": "config_isolated",
+        "test": {
+          "by_kernel": {
+            "atax": 108,
+            "bicg": 96,
+            "gemm": 168,
+            "gemm_blocked": 41
+          },
+          "by_task": {
+            "feasibility_repair": 324,
+            "qor_optimization": 89
+          },
+          "negative": 183,
+          "positive": 230,
+          "positive_ratio": 0.5569,
+          "rows": 413
+        },
+        "train": {
+          "by_kernel": {
+            "atax": 342,
+            "bicg": 264,
+            "gemm": 422,
+            "gemm_blocked": 179
+          },
+          "by_task": {
+            "feasibility_repair": 942,
+            "qor_optimization": 265
+          },
+          "negative": 627,
+          "positive": 580,
+          "positive_ratio": 0.4805,
+          "rows": 1207
+        }
+      }
+    },
+    "pattern_isolated": {
+      "feature_sets": {
+        "a_config_edit": {
+          "num_features": 56,
+          "test": {
+            "accuracy": 0.8425,
+            "confusion_matrix": {
+              "fn": 34,
+              "fp": 29,
+              "tn": 171,
+              "tp": 166
+            },
+            "count": 400,
+            "f1": 0.8405,
+            "roc_auc": 0.9365
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 200,
+            "ranking_accuracy": 0.875
+          },
+          "train": {
+            "accuracy": 0.9844,
+            "confusion_matrix": {
+              "fn": 13,
+              "fp": 6,
+              "tn": 604,
+              "tp": 597
+            },
+            "count": 1220,
+            "f1": 0.9843,
+            "roc_auc": 0.9991
+          }
+        },
+        "a_result_edit": {
+          "num_features": 82,
+          "test": {
+            "accuracy": 0.8075,
+            "confusion_matrix": {
+              "fn": 33,
+              "fp": 44,
+              "tn": 156,
+              "tp": 167
+            },
+            "count": 400,
+            "f1": 0.8127,
+            "roc_auc": 0.9091
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 200,
+            "ranking_accuracy": 0.84
+          },
+          "train": {
+            "accuracy": 0.968,
+            "confusion_matrix": {
+              "fn": 21,
+              "fp": 18,
+              "tn": 592,
+              "tp": 589
+            },
+            "count": 1220,
+            "f1": 0.968,
+            "roc_auc": 0.9975
+          }
+        },
+        "edit_only": {
+          "num_features": 44,
+          "test": {
+            "accuracy": 0.79,
+            "confusion_matrix": {
+              "fn": 35,
+              "fp": 49,
+              "tn": 151,
+              "tp": 165
+            },
+            "count": 400,
+            "f1": 0.7971,
+            "roc_auc": 0.8939
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 200,
+            "ranking_accuracy": 0.755
+          },
+          "train": {
+            "accuracy": 0.9582,
+            "confusion_matrix": {
+              "fn": 22,
+              "fp": 29,
+              "tn": 581,
+              "tp": 588
+            },
+            "count": 1220,
+            "f1": 0.9584,
+            "roc_auc": 0.9952
+          }
+        },
+        "full": {
+          "num_features": 115,
+          "test": {
+            "accuracy": 0.8375,
+            "confusion_matrix": {
+              "fn": 33,
+              "fp": 32,
+              "tn": 168,
+              "tp": 167
+            },
+            "count": 400,
+            "f1": 0.8371,
+            "roc_auc": 0.9259
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 200,
+            "ranking_accuracy": 0.85
+          },
+          "train": {
+            "accuracy": 0.9852,
+            "confusion_matrix": {
+              "fn": 11,
+              "fp": 7,
+              "tn": 603,
+              "tp": 599
+            },
+            "count": 1220,
+            "f1": 0.9852,
+            "roc_auc": 0.9993
+          }
+        },
+        "shuffled_a_result": {
+          "num_features": 94,
+          "test": {
+            "accuracy": 0.835,
+            "confusion_matrix": {
+              "fn": 32,
+              "fp": 34,
+              "tn": 166,
+              "tp": 168
+            },
+            "count": 400,
+            "f1": 0.8358,
+            "roc_auc": 0.9269
+          },
+          "test_contrast_ranking": {
+            "contrast_groups": 200,
+            "ranking_accuracy": 0.905
+          },
+          "train": {
+            "accuracy": 0.9852,
+            "confusion_matrix": {
+              "fn": 11,
+              "fp": 7,
+              "tn": 603,
+              "tp": 599
+            },
+            "count": 1220,
+            "f1": 0.9852,
+            "roc_auc": 0.9995
+          }
+        }
+      },
+      "split_summary": {
+        "name": "pattern_isolated",
+        "test": {
+          "by_kernel": {
+            "atax": 70,
+            "bicg": 140,
+            "gemm": 130,
+            "gemm_blocked": 60
+          },
+          "by_task": {
+            "feasibility_repair": 307,
+            "qor_optimization": 93
+          },
+          "negative": 200,
+          "positive": 200,
+          "positive_ratio": 0.5,
+          "rows": 400
+        },
+        "train": {
+          "by_kernel": {
+            "atax": 380,
+            "bicg": 220,
+            "gemm": 460,
+            "gemm_blocked": 160
+          },
+          "by_task": {
+            "feasibility_repair": 959,
+            "qor_optimization": 261
+          },
+          "negative": 610,
+          "positive": 610,
+          "positive_ratio": 0.5,
+          "rows": 1220
+        }
+      }
+    }
+  }
+}

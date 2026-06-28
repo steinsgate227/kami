@@ -1,0 +1,37 @@
+{
+  "by_kernel": {
+    "atax": 225,
+    "bicg": 180,
+    "gemm": 295,
+    "gemm_blocked": 110
+  },
+  "contrasts": 810,
+  "edit_groups_total": 275,
+  "edit_groups_with_both_labels": 162,
+  "input": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\all_edit_preferences.jsonl",
+  "output": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_dependency_contrasts.jsonl",
+  "schema": {
+    "allowed_inputs": [
+      "A_config",
+      "A_result",
+      "candidate_edit"
+    ],
+    "forbidden_inputs": [
+      "B_result",
+      "B_status",
+      "B_latency",
+      "B_resource",
+      "target_result"
+    ],
+    "purpose": "diagnostic subset for testing whether models use A_result to decide the same edit pattern under different synthesis contexts"
+  },
+  "task_negative_counts": {
+    "feasibility_repair": 666,
+    "qor_optimization": 144
+  },
+  "task_positive_counts": {
+    "feasibility_repair": 600,
+    "qor_optimization": 210
+  },
+  "total_candidate_edit_examples": 29494
+}

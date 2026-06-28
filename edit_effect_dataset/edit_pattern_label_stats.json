@@ -1,0 +1,380 @@
+[
+  {
+    "edit_type": "array_partition_add",
+    "negative": 3496,
+    "negative_ratio": 0.3623,
+    "positive": 6154,
+    "positive_ratio": 0.6377,
+    "task": "all",
+    "total": 9650
+  },
+  {
+    "edit_type": "array_partition_block",
+    "negative": 5081,
+    "negative_ratio": 0.4937,
+    "positive": 5211,
+    "positive_ratio": 0.5063,
+    "task": "all",
+    "total": 10292
+  },
+  {
+    "edit_type": "array_partition_count_same",
+    "negative": 5476,
+    "negative_ratio": 0.5154,
+    "positive": 5148,
+    "positive_ratio": 0.4846,
+    "task": "all",
+    "total": 10624
+  },
+  {
+    "edit_type": "array_partition_cyclic",
+    "negative": 6300,
+    "negative_ratio": 0.447,
+    "positive": 7795,
+    "positive_ratio": 0.553,
+    "task": "all",
+    "total": 14095
+  },
+  {
+    "edit_type": "array_partition_factor_decrease",
+    "negative": 6039,
+    "negative_ratio": 0.5259,
+    "positive": 5444,
+    "positive_ratio": 0.4741,
+    "task": "all",
+    "total": 11483
+  },
+  {
+    "edit_type": "array_partition_factor_increase",
+    "negative": 4975,
+    "negative_ratio": 0.4354,
+    "positive": 6450,
+    "positive_ratio": 0.5646,
+    "task": "all",
+    "total": 11425
+  },
+  {
+    "edit_type": "array_partition_remove",
+    "negative": 3500,
+    "negative_ratio": 0.662,
+    "positive": 1787,
+    "positive_ratio": 0.338,
+    "task": "all",
+    "total": 5287
+  },
+  {
+    "edit_type": "dataflow_off",
+    "negative": 1176,
+    "negative_ratio": 0.9899,
+    "positive": 12,
+    "positive_ratio": 0.0101,
+    "task": "all",
+    "total": 1188
+  },
+  {
+    "edit_type": "dataflow_on",
+    "negative": 1103,
+    "negative_ratio": 0.3445,
+    "positive": 2099,
+    "positive_ratio": 0.6555,
+    "task": "all",
+    "total": 3202
+  },
+  {
+    "edit_type": "pipeline_ii_decrease",
+    "negative": 551,
+    "negative_ratio": 0.473,
+    "positive": 614,
+    "positive_ratio": 0.527,
+    "task": "all",
+    "total": 1165
+  },
+  {
+    "edit_type": "pipeline_ii_increase",
+    "negative": 412,
+    "negative_ratio": 0.1877,
+    "positive": 1783,
+    "positive_ratio": 0.8123,
+    "task": "all",
+    "total": 2195
+  },
+  {
+    "edit_type": "pipeline_off",
+    "negative": 583,
+    "negative_ratio": 0.2147,
+    "positive": 2133,
+    "positive_ratio": 0.7853,
+    "task": "all",
+    "total": 2716
+  },
+  {
+    "edit_type": "pipeline_on",
+    "negative": 351,
+    "negative_ratio": 0.4339,
+    "positive": 458,
+    "positive_ratio": 0.5661,
+    "task": "all",
+    "total": 809
+  },
+  {
+    "edit_type": "unroll_decrease",
+    "negative": 2907,
+    "negative_ratio": 0.4353,
+    "positive": 3771,
+    "positive_ratio": 0.5647,
+    "task": "all",
+    "total": 6678
+  },
+  {
+    "edit_type": "unroll_increase",
+    "negative": 2573,
+    "negative_ratio": 0.4643,
+    "positive": 2969,
+    "positive_ratio": 0.5357,
+    "task": "all",
+    "total": 5542
+  },
+  {
+    "edit_type": "array_partition_add",
+    "negative": 2856,
+    "negative_ratio": 0.3487,
+    "positive": 5335,
+    "positive_ratio": 0.6513,
+    "task": "feasibility_repair",
+    "total": 8191
+  },
+  {
+    "edit_type": "array_partition_block",
+    "negative": 3619,
+    "negative_ratio": 0.4832,
+    "positive": 3870,
+    "positive_ratio": 0.5168,
+    "task": "feasibility_repair",
+    "total": 7489
+  },
+  {
+    "edit_type": "array_partition_count_same",
+    "negative": 3881,
+    "negative_ratio": 0.5684,
+    "positive": 2947,
+    "positive_ratio": 0.4316,
+    "task": "feasibility_repair",
+    "total": 6828
+  },
+  {
+    "edit_type": "array_partition_cyclic",
+    "negative": 4526,
+    "negative_ratio": 0.4545,
+    "positive": 5432,
+    "positive_ratio": 0.5455,
+    "task": "feasibility_repair",
+    "total": 9958
+  },
+  {
+    "edit_type": "array_partition_factor_decrease",
+    "negative": 5337,
+    "negative_ratio": 0.5074,
+    "positive": 5181,
+    "positive_ratio": 0.4926,
+    "task": "feasibility_repair",
+    "total": 10518
+  },
+  {
+    "edit_type": "array_partition_factor_increase",
+    "negative": 2616,
+    "negative_ratio": 0.4575,
+    "positive": 3102,
+    "positive_ratio": 0.5425,
+    "task": "feasibility_repair",
+    "total": 5718
+  },
+  {
+    "edit_type": "array_partition_remove",
+    "negative": 2267,
+    "negative_ratio": 0.6727,
+    "positive": 1103,
+    "positive_ratio": 0.3273,
+    "task": "feasibility_repair",
+    "total": 3370
+  },
+  {
+    "edit_type": "dataflow_off",
+    "negative": 866,
+    "negative_ratio": 0.9863,
+    "positive": 12,
+    "positive_ratio": 0.0137,
+    "task": "feasibility_repair",
+    "total": 878
+  },
+  {
+    "edit_type": "dataflow_on",
+    "negative": 1103,
+    "negative_ratio": 0.3445,
+    "positive": 2099,
+    "positive_ratio": 0.6555,
+    "task": "feasibility_repair",
+    "total": 3202
+  },
+  {
+    "edit_type": "pipeline_ii_decrease",
+    "negative": 551,
+    "negative_ratio": 0.473,
+    "positive": 614,
+    "positive_ratio": 0.527,
+    "task": "feasibility_repair",
+    "total": 1165
+  },
+  {
+    "edit_type": "pipeline_ii_increase",
+    "negative": 292,
+    "negative_ratio": 0.1758,
+    "positive": 1369,
+    "positive_ratio": 0.8242,
+    "task": "feasibility_repair",
+    "total": 1661
+  },
+  {
+    "edit_type": "pipeline_off",
+    "negative": 465,
+    "negative_ratio": 0.2085,
+    "positive": 1765,
+    "positive_ratio": 0.7915,
+    "task": "feasibility_repair",
+    "total": 2230
+  },
+  {
+    "edit_type": "pipeline_on",
+    "negative": 351,
+    "negative_ratio": 0.4339,
+    "positive": 458,
+    "positive_ratio": 0.5661,
+    "task": "feasibility_repair",
+    "total": 809
+  },
+  {
+    "edit_type": "unroll_decrease",
+    "negative": 2116,
+    "negative_ratio": 0.4479,
+    "positive": 2608,
+    "positive_ratio": 0.5521,
+    "task": "feasibility_repair",
+    "total": 4724
+  },
+  {
+    "edit_type": "unroll_increase",
+    "negative": 1968,
+    "negative_ratio": 0.4862,
+    "positive": 2080,
+    "positive_ratio": 0.5138,
+    "task": "feasibility_repair",
+    "total": 4048
+  },
+  {
+    "edit_type": "array_partition_add",
+    "negative": 640,
+    "negative_ratio": 0.4387,
+    "positive": 819,
+    "positive_ratio": 0.5613,
+    "task": "qor_optimization",
+    "total": 1459
+  },
+  {
+    "edit_type": "array_partition_block",
+    "negative": 1462,
+    "negative_ratio": 0.5216,
+    "positive": 1341,
+    "positive_ratio": 0.4784,
+    "task": "qor_optimization",
+    "total": 2803
+  },
+  {
+    "edit_type": "array_partition_count_same",
+    "negative": 1595,
+    "negative_ratio": 0.4202,
+    "positive": 2201,
+    "positive_ratio": 0.5798,
+    "task": "qor_optimization",
+    "total": 3796
+  },
+  {
+    "edit_type": "array_partition_cyclic",
+    "negative": 1774,
+    "negative_ratio": 0.4288,
+    "positive": 2363,
+    "positive_ratio": 0.5712,
+    "task": "qor_optimization",
+    "total": 4137
+  },
+  {
+    "edit_type": "array_partition_factor_decrease",
+    "negative": 702,
+    "negative_ratio": 0.7275,
+    "positive": 263,
+    "positive_ratio": 0.2725,
+    "task": "qor_optimization",
+    "total": 965
+  },
+  {
+    "edit_type": "array_partition_factor_increase",
+    "negative": 2359,
+    "negative_ratio": 0.4134,
+    "positive": 3348,
+    "positive_ratio": 0.5866,
+    "task": "qor_optimization",
+    "total": 5707
+  },
+  {
+    "edit_type": "array_partition_remove",
+    "negative": 1233,
+    "negative_ratio": 0.6432,
+    "positive": 684,
+    "positive_ratio": 0.3568,
+    "task": "qor_optimization",
+    "total": 1917
+  },
+  {
+    "edit_type": "dataflow_off",
+    "negative": 310,
+    "negative_ratio": 1.0,
+    "positive": 0,
+    "positive_ratio": 0.0,
+    "task": "qor_optimization",
+    "total": 310
+  },
+  {
+    "edit_type": "pipeline_ii_increase",
+    "negative": 120,
+    "negative_ratio": 0.2247,
+    "positive": 414,
+    "positive_ratio": 0.7753,
+    "task": "qor_optimization",
+    "total": 534
+  },
+  {
+    "edit_type": "pipeline_off",
+    "negative": 118,
+    "negative_ratio": 0.2428,
+    "positive": 368,
+    "positive_ratio": 0.7572,
+    "task": "qor_optimization",
+    "total": 486
+  },
+  {
+    "edit_type": "unroll_decrease",
+    "negative": 791,
+    "negative_ratio": 0.4048,
+    "positive": 1163,
+    "positive_ratio": 0.5952,
+    "task": "qor_optimization",
+    "total": 1954
+  },
+  {
+    "edit_type": "unroll_increase",
+    "negative": 605,
+    "negative_ratio": 0.405,
+    "positive": 889,
+    "positive_ratio": 0.595,
+    "task": "qor_optimization",
+    "total": 1494
+  }
+]

@@ -1,0 +1,171 @@
+{
+  "by_kernel": {
+    "atax": 72,
+    "bicg": 92,
+    "gemm": 342
+  },
+  "examples": 506,
+  "feature_sets": {
+    "a_config_edit": {
+      "num_features": 51,
+      "test": {
+        "accuracy": 0.95,
+        "confusion_matrix": {
+          "fn": 2,
+          "fp": 5,
+          "tn": 65,
+          "tp": 68
+        },
+        "count": 140,
+        "f1": 0.951,
+        "roc_auc": 0.996
+      },
+      "test_pair_ranking": {
+        "matched_groups": 70,
+        "ranking_accuracy": 1.0
+      },
+      "train": {
+        "accuracy": 0.9672,
+        "confusion_matrix": {
+          "fn": 3,
+          "fp": 9,
+          "tn": 174,
+          "tp": 180
+        },
+        "count": 366,
+        "f1": 0.9677,
+        "roc_auc": 0.9984
+      }
+    },
+    "a_result_edit": {
+      "num_features": 77,
+      "test": {
+        "accuracy": 0.9714,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 4,
+          "tn": 66,
+          "tp": 70
+        },
+        "count": 140,
+        "f1": 0.9722,
+        "roc_auc": 0.9967
+      },
+      "test_pair_ranking": {
+        "matched_groups": 70,
+        "ranking_accuracy": 1.0
+      },
+      "train": {
+        "accuracy": 0.9672,
+        "confusion_matrix": {
+          "fn": 3,
+          "fp": 9,
+          "tn": 174,
+          "tp": 180
+        },
+        "count": 366,
+        "f1": 0.9677,
+        "roc_auc": 0.9981
+      }
+    },
+    "edit_only": {
+      "num_features": 39,
+      "test": {
+        "accuracy": 0.8,
+        "confusion_matrix": {
+          "fn": 16,
+          "fp": 12,
+          "tn": 58,
+          "tp": 54
+        },
+        "count": 140,
+        "f1": 0.7941,
+        "roc_auc": 0.9034
+      },
+      "test_pair_ranking": {
+        "matched_groups": 70,
+        "ranking_accuracy": 0.7
+      },
+      "train": {
+        "accuracy": 0.8306,
+        "confusion_matrix": {
+          "fn": 38,
+          "fp": 24,
+          "tn": 159,
+          "tp": 145
+        },
+        "count": 366,
+        "f1": 0.8239,
+        "roc_auc": 0.9318
+      }
+    },
+    "full": {
+      "num_features": 110,
+      "test": {
+        "accuracy": 0.9786,
+        "confusion_matrix": {
+          "fn": 1,
+          "fp": 2,
+          "tn": 68,
+          "tp": 69
+        },
+        "count": 140,
+        "f1": 0.9787,
+        "roc_auc": 0.9979
+      },
+      "test_pair_ranking": {
+        "matched_groups": 70,
+        "ranking_accuracy": 1.0
+      },
+      "train": {
+        "accuracy": 0.9836,
+        "confusion_matrix": {
+          "fn": 3,
+          "fp": 3,
+          "tn": 180,
+          "tp": 180
+        },
+        "count": 366,
+        "f1": 0.9836,
+        "roc_auc": 0.9993
+      }
+    },
+    "shuffled_a_result": {
+      "num_features": 89,
+      "test": {
+        "accuracy": 0.95,
+        "confusion_matrix": {
+          "fn": 4,
+          "fp": 3,
+          "tn": 67,
+          "tp": 66
+        },
+        "count": 140,
+        "f1": 0.9496,
+        "roc_auc": 0.9954
+      },
+      "test_pair_ranking": {
+        "matched_groups": 70,
+        "ranking_accuracy": 1.0
+      },
+      "train": {
+        "accuracy": 0.9945,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 2,
+          "tn": 181,
+          "tp": 183
+        },
+        "count": 366,
+        "f1": 0.9946,
+        "roc_auc": 0.9999
+      }
+    }
+  },
+  "input": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_causal_matched_pairs.jsonl",
+  "matched_pairs": 253,
+  "split": {
+    "test_rows": 140,
+    "train_rows": 366
+  }
+}

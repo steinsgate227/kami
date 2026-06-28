@@ -1,0 +1,245 @@
+{
+  "all": {
+    "by_kernel": {
+      "atax": 3657,
+      "bicg": 1464,
+      "gemm": 3551,
+      "gemm_blocked": 700
+    },
+    "by_negative_tier": {
+      "easy_negative": 1606,
+      "hard_negative": 4407,
+      "medium_negative": 3359
+    },
+    "by_task": {
+      "feasibility_repair": 5941,
+      "qor_optimization": 3431
+    },
+    "name": "all",
+    "pairs": 9372,
+    "unique_a": 363,
+    "unique_abstract_pair_patterns": 5552
+  },
+  "ambiguous_candidate_edit_signatures": 276,
+  "candidate_edit_signatures": 1102,
+  "eval_headline": {
+    "abstract_pattern_isolated": {
+      "a_config_edit": {
+        "accuracy": 0.9626,
+        "auc": 0.9951,
+        "confusion_matrix": {
+          "fn": 46,
+          "fp": 31,
+          "tn": 1020,
+          "tp": 964
+        },
+        "f1": 0.9616,
+        "precision": 0.9688,
+        "recall": 0.9545
+      },
+      "a_result_edit": {
+        "accuracy": 0.966,
+        "auc": 0.9961,
+        "confusion_matrix": {
+          "fn": 42,
+          "fp": 28,
+          "tn": 1023,
+          "tp": 968
+        },
+        "f1": 0.9651,
+        "precision": 0.9719,
+        "recall": 0.9584
+      },
+      "edit_only": {
+        "accuracy": 0.9612,
+        "auc": 0.9946,
+        "confusion_matrix": {
+          "fn": 38,
+          "fp": 42,
+          "tn": 1009,
+          "tp": 972
+        },
+        "f1": 0.9605,
+        "precision": 0.9586,
+        "recall": 0.9624
+      },
+      "full": {
+        "accuracy": 0.9563,
+        "auc": 0.9936,
+        "confusion_matrix": {
+          "fn": 52,
+          "fp": 38,
+          "tn": 1013,
+          "tp": 958
+        },
+        "f1": 0.9551,
+        "precision": 0.9618,
+        "recall": 0.9485
+      },
+      "full_no_structure": {
+        "accuracy": 0.9709,
+        "auc": 0.9966,
+        "confusion_matrix": {
+          "fn": 33,
+          "fp": 27,
+          "tn": 1024,
+          "tp": 977
+        },
+        "f1": 0.9702,
+        "precision": 0.9731,
+        "recall": 0.9673
+      },
+      "shuffled_a_result": {
+        "accuracy": 0.9636,
+        "auc": 0.9953,
+        "confusion_matrix": {
+          "fn": 43,
+          "fp": 32,
+          "tn": 1019,
+          "tp": 967
+        },
+        "f1": 0.9627,
+        "precision": 0.968,
+        "recall": 0.9574
+      }
+    },
+    "config_isolated": {
+      "a_config_edit": {
+        "accuracy": 0.9559,
+        "auc": 0.9924,
+        "confusion_matrix": {
+          "fn": 33,
+          "fp": 56,
+          "tn": 973,
+          "tp": 954
+        },
+        "f1": 0.9554,
+        "precision": 0.9446,
+        "recall": 0.9666
+      },
+      "a_result_edit": {
+        "accuracy": 0.9549,
+        "auc": 0.9935,
+        "confusion_matrix": {
+          "fn": 33,
+          "fp": 58,
+          "tn": 971,
+          "tp": 954
+        },
+        "f1": 0.9545,
+        "precision": 0.9427,
+        "recall": 0.9666
+      },
+      "edit_only": {
+        "accuracy": 0.9499,
+        "auc": 0.991,
+        "confusion_matrix": {
+          "fn": 38,
+          "fp": 63,
+          "tn": 966,
+          "tp": 949
+        },
+        "f1": 0.9495,
+        "precision": 0.9377,
+        "recall": 0.9615
+      },
+      "full": {
+        "accuracy": 0.9439,
+        "auc": 0.9909,
+        "confusion_matrix": {
+          "fn": 44,
+          "fp": 69,
+          "tn": 960,
+          "tp": 943
+        },
+        "f1": 0.9435,
+        "precision": 0.9318,
+        "recall": 0.9554
+      },
+      "full_no_structure": {
+        "accuracy": 0.9559,
+        "auc": 0.994,
+        "confusion_matrix": {
+          "fn": 35,
+          "fp": 54,
+          "tn": 975,
+          "tp": 952
+        },
+        "f1": 0.9553,
+        "precision": 0.9463,
+        "recall": 0.9645
+      },
+      "shuffled_a_result": {
+        "accuracy": 0.9494,
+        "auc": 0.9919,
+        "confusion_matrix": {
+          "fn": 38,
+          "fp": 64,
+          "tn": 965,
+          "tp": 949
+        },
+        "f1": 0.949,
+        "precision": 0.9368,
+        "recall": 0.9615
+      }
+    }
+  },
+  "files": {
+    "all": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\hard_all_edit_preferences.jsonl",
+    "eval": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\hard_eval_report.json",
+    "summary": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\hard_dataset_summary.json",
+    "test": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\hard_test_edit_preferences.jsonl",
+    "train": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\hard_train_edit_preferences.jsonl"
+  },
+  "purpose": "Harder subset that reduces edit-only shortcut learning by emphasizing ambiguous edit signatures, hard/medium negatives, QoR, and GEMM.",
+  "rules": {
+    "ambiguous_edit_signature": "abstract candidate edit appears as both good and bad with good_rate between 0.2 and 0.8 and total >= 8",
+    "caps": "cap repeated (kernel, task, tier, abstract good/bad pattern) groups",
+    "split": "hard_train/test use config-isolated split; hard_eval_report also includes abstract-pattern-isolated evaluation"
+  },
+  "source": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\all_edit_preferences.jsonl",
+  "test": {
+    "by_kernel": {
+      "atax": 629,
+      "bicg": 298,
+      "gemm": 908,
+      "gemm_blocked": 181
+    },
+    "by_negative_tier": {
+      "easy_negative": 381,
+      "hard_negative": 851,
+      "medium_negative": 784
+    },
+    "by_task": {
+      "feasibility_repair": 1503,
+      "qor_optimization": 513
+    },
+    "name": "test",
+    "pairs": 2016,
+    "unique_a": 79,
+    "unique_abstract_pair_patterns": 1672
+  },
+  "train": {
+    "by_kernel": {
+      "atax": 3028,
+      "bicg": 1166,
+      "gemm": 2643,
+      "gemm_blocked": 519
+    },
+    "by_negative_tier": {
+      "easy_negative": 1225,
+      "hard_negative": 3556,
+      "medium_negative": 2575
+    },
+    "by_task": {
+      "feasibility_repair": 4438,
+      "qor_optimization": 2918
+    },
+    "name": "train",
+    "pairs": 7356,
+    "unique_a": 284,
+    "unique_abstract_pair_patterns": 4638
+  },
+  "train_test_a_config_overlap": 0,
+  "train_test_abstract_edit_pattern_overlap": 758
+}

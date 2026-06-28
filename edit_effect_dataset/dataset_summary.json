@@ -1,0 +1,110 @@
+{
+  "all": {
+    "by_kernel": {
+      "atax": 4434,
+      "bicg": 3227,
+      "gemm": 6006,
+      "gemm_blocked": 1080
+    },
+    "by_negative_tier": {
+      "easy_negative": 3820,
+      "hard_negative": 5582,
+      "medium_negative": 5345
+    },
+    "by_task": {
+      "feasibility_repair": 11043,
+      "qor_optimization": 3704
+    },
+    "by_task_tier": {
+      "feasibility_repair/easy_negative": 3387,
+      "feasibility_repair/hard_negative": 3877,
+      "feasibility_repair/medium_negative": 3779,
+      "qor_optimization/easy_negative": 433,
+      "qor_optimization/hard_negative": 1705,
+      "qor_optimization/medium_negative": 1566
+    },
+    "name": "all",
+    "pairs": 14747,
+    "unique_a": 399,
+    "unique_edit_patterns": 2290
+  },
+  "input_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\merged_results_with_qor_v2.csv",
+  "output_dir": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset",
+  "raw_candidates": 183453,
+  "rules": {
+    "candidate_filter": "Targets must be same kernel and differ by 1-2 pragma groups.",
+    "dedup": "Keep unique (task, A config, exact good edit, exact bad edit).",
+    "negative_tiers": {
+      "easy_negative": "bad edit is timeout/fail/error/unknown.",
+      "hard_negative": "bad edit has partial improvement or is also successful, but is worse than good edit.",
+      "medium_negative": "bad edit succeeds without useful improvement, or remains overflow."
+    },
+    "pattern_split": "Train and test do not share abstract edit_pattern_id.",
+    "quality_note": "Selection caps repeated pattern/kernel/task/tier buckets to reduce pattern memorization.",
+    "task": "Given same A, choose good_edit over bad_edit.",
+    "visibility": "Public files contain A-side synthesis result plus edit ops only; target results are private audit only."
+  },
+  "selected_after_balance": 27308,
+  "test": {
+    "by_kernel": {
+      "atax": 860,
+      "bicg": 343,
+      "gemm": 1814,
+      "gemm_blocked": 266
+    },
+    "by_negative_tier": {
+      "easy_negative": 1071,
+      "hard_negative": 1127,
+      "medium_negative": 1085
+    },
+    "by_task": {
+      "feasibility_repair": 2526,
+      "qor_optimization": 757
+    },
+    "by_task_tier": {
+      "feasibility_repair/easy_negative": 982,
+      "feasibility_repair/hard_negative": 879,
+      "feasibility_repair/medium_negative": 665,
+      "qor_optimization/easy_negative": 89,
+      "qor_optimization/hard_negative": 248,
+      "qor_optimization/medium_negative": 420
+    },
+    "name": "test",
+    "pairs": 3283,
+    "unique_a": 147,
+    "unique_edit_patterns": 1027
+  },
+  "test_patterns": 1027,
+  "train": {
+    "by_kernel": {
+      "atax": 3574,
+      "bicg": 2884,
+      "gemm": 4192,
+      "gemm_blocked": 814
+    },
+    "by_negative_tier": {
+      "easy_negative": 2749,
+      "hard_negative": 4455,
+      "medium_negative": 4260
+    },
+    "by_task": {
+      "feasibility_repair": 8517,
+      "qor_optimization": 2947
+    },
+    "by_task_tier": {
+      "feasibility_repair/easy_negative": 2405,
+      "feasibility_repair/hard_negative": 2998,
+      "feasibility_repair/medium_negative": 3114,
+      "qor_optimization/easy_negative": 344,
+      "qor_optimization/hard_negative": 1457,
+      "qor_optimization/medium_negative": 1146
+    },
+    "name": "train",
+    "pairs": 11464,
+    "unique_a": 252,
+    "unique_edit_patterns": 1263
+  },
+  "train_patterns": 1263,
+  "train_test_a_config_overlap": 0,
+  "train_test_edit_pattern_overlap": 0
+}

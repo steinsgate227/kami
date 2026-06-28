@@ -1,0 +1,34 @@
+{
+  "by_kernel": {
+    "atax": 257,
+    "bicg": 215,
+    "gemm": 198
+  },
+  "dataset": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\trajectory_seed_v2.jsonl",
+  "feature_sets": {
+    "edit_only": {
+      "accuracy": 0.9852,
+      "auc": 0.9979,
+      "f1": 0.9909,
+      "positive_rate": 0.8074
+    },
+    "result_edit": {
+      "accuracy": 0.9852,
+      "auc": 1.0,
+      "f1": 0.9909,
+      "positive_rate": 0.8074
+    },
+    "shuffled_result_edit": {
+      "accuracy": 0.9778,
+      "auc": 0.9979,
+      "f1": 0.9863,
+      "positive_rate": 0.8074
+    }
+  },
+  "steps": 670,
+  "test_steps": 135,
+  "test_trajectories": 40,
+  "train_steps": 535,
+  "train_trajectories": 160,
+  "trajectories": 200
+}

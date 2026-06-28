@@ -1,0 +1,98 @@
+{
+  "arrays_by_kernel": {
+    "atax": [
+      "A",
+      "buff_A",
+      "buff_x",
+      "buff_y_out",
+      "tmp1"
+    ],
+    "bicg": [
+      "A",
+      "buff_A",
+      "buff_p",
+      "buff_q_out",
+      "buff_r",
+      "buff_s_out"
+    ],
+    "gemm": [
+      "A",
+      "B",
+      "C",
+      "D_out",
+      "buff_A",
+      "buff_B",
+      "buff_C",
+      "buff_D_out",
+      "tmp1"
+    ],
+    "gemm_blocked": [
+      "m1",
+      "m2",
+      "prod"
+    ],
+    "gesummv": [
+      "A",
+      "B",
+      "buff_A",
+      "buff_B",
+      "buff_x",
+      "buff_y_out",
+      "tmp1",
+      "tmp2"
+    ],
+    "syr2k": [
+      "A",
+      "B",
+      "C",
+      "D_out",
+      "buff_A0",
+      "buff_A1",
+      "buff_B0",
+      "buff_B1",
+      "buff_C",
+      "buff_D_out",
+      "tmp1",
+      "tmp2"
+    ]
+  },
+  "config_signature_rule": [
+    "kernel",
+    "pipeline_on",
+    "pipeline_II",
+    "unroll_factor",
+    "normalized partition_details",
+    "dataflow"
+  ],
+  "existing_rows": 868,
+  "existing_unique_signatures": 277,
+  "input_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\merged_results_with_qor.csv",
+  "mutation_field_count": {
+    "1": 317,
+    "2": 163
+  },
+  "output_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\qor_unique_candidates.csv",
+  "raw_generated_variants_checked": 972,
+  "selected_by_kernel": {
+    "atax": 90,
+    "bicg": 90,
+    "gemm": 140,
+    "gemm_blocked": 160
+  },
+  "selected_candidates": 480,
+  "skipped_duplicate_candidate_signature": 379,
+  "skipped_existing_signature": 113,
+  "success_seed_rows": 236,
+  "success_seed_rows_by_kernel": {
+    "atax": 83,
+    "bicg": 50,
+    "gemm": 24,
+    "gemm_blocked": 79
+  },
+  "target_per_kernel": {
+    "atax": 90,
+    "bicg": 90,
+    "gemm": 140,
+    "gemm_blocked": 160
+  }
+}

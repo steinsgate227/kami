@@ -1,0 +1,354 @@
+{
+  "dataset": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset",
+  "feature_sets": {
+    "a_config_edit": {
+      "logistic": {
+        "accuracy": 0.8621,
+        "auc": 0.8506,
+        "confusion_matrix": {
+          "fn": 4,
+          "fp": 0,
+          "tn": 7,
+          "tp": 18
+        },
+        "f1": 0.9,
+        "precision": 1.0,
+        "recall": 0.8182
+      },
+      "majority": {
+        "accuracy": 0.2414,
+        "auc": 0.5,
+        "confusion_matrix": {
+          "fn": 22,
+          "fp": 0,
+          "tn": 7,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "random_forest": {
+        "accuracy": 0.8966,
+        "auc": 0.9416,
+        "confusion_matrix": {
+          "fn": 3,
+          "fp": 0,
+          "tn": 7,
+          "tp": 19
+        },
+        "f1": 0.9268,
+        "precision": 1.0,
+        "recall": 0.8636
+      },
+      "xgboost": {
+        "accuracy": 0.931,
+        "auc": 0.961,
+        "confusion_matrix": {
+          "fn": 2,
+          "fp": 0,
+          "tn": 7,
+          "tp": 20
+        },
+        "f1": 0.9524,
+        "precision": 1.0,
+        "recall": 0.9091
+      }
+    },
+    "a_result_edit": {
+      "logistic": {
+        "accuracy": 1.0,
+        "auc": 1.0,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 7,
+          "tp": 22
+        },
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "majority": {
+        "accuracy": 0.2414,
+        "auc": 0.5,
+        "confusion_matrix": {
+          "fn": 22,
+          "fp": 0,
+          "tn": 7,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "random_forest": {
+        "accuracy": 1.0,
+        "auc": 1.0,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 7,
+          "tp": 22
+        },
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "xgboost": {
+        "accuracy": 1.0,
+        "auc": 1.0,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 7,
+          "tp": 22
+        },
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "edit_only": {
+      "logistic": {
+        "accuracy": 0.6897,
+        "auc": 0.5877,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 4,
+          "tn": 3,
+          "tp": 17
+        },
+        "f1": 0.7907,
+        "precision": 0.8095,
+        "recall": 0.7727
+      },
+      "majority": {
+        "accuracy": 0.2414,
+        "auc": 0.5,
+        "confusion_matrix": {
+          "fn": 22,
+          "fp": 0,
+          "tn": 7,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "random_forest": {
+        "accuracy": 0.6897,
+        "auc": 0.6786,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 4,
+          "tn": 3,
+          "tp": 17
+        },
+        "f1": 0.7907,
+        "precision": 0.8095,
+        "recall": 0.7727
+      },
+      "xgboost": {
+        "accuracy": 0.5862,
+        "auc": 0.6364,
+        "confusion_matrix": {
+          "fn": 11,
+          "fp": 1,
+          "tn": 6,
+          "tp": 11
+        },
+        "f1": 0.6471,
+        "precision": 0.9167,
+        "recall": 0.5
+      }
+    },
+    "full": {
+      "logistic": {
+        "accuracy": 1.0,
+        "auc": 1.0,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 7,
+          "tp": 22
+        },
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "majority": {
+        "accuracy": 0.2414,
+        "auc": 0.5,
+        "confusion_matrix": {
+          "fn": 22,
+          "fp": 0,
+          "tn": 7,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "random_forest": {
+        "accuracy": 1.0,
+        "auc": 1.0,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 7,
+          "tp": 22
+        },
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "xgboost": {
+        "accuracy": 1.0,
+        "auc": 1.0,
+        "confusion_matrix": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 7,
+          "tp": 22
+        },
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "shuffled_a_result_edit": {
+      "logistic": {
+        "accuracy": 0.6897,
+        "auc": 0.5649,
+        "confusion_matrix": {
+          "fn": 7,
+          "fp": 2,
+          "tn": 5,
+          "tp": 15
+        },
+        "f1": 0.7692,
+        "precision": 0.8824,
+        "recall": 0.6818
+      },
+      "majority": {
+        "accuracy": 0.2414,
+        "auc": 0.5,
+        "confusion_matrix": {
+          "fn": 22,
+          "fp": 0,
+          "tn": 7,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "random_forest": {
+        "accuracy": 0.7241,
+        "auc": 0.6364,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 3,
+          "tn": 4,
+          "tp": 17
+        },
+        "f1": 0.8095,
+        "precision": 0.85,
+        "recall": 0.7727
+      },
+      "xgboost": {
+        "accuracy": 0.4828,
+        "auc": 0.6688,
+        "confusion_matrix": {
+          "fn": 13,
+          "fp": 2,
+          "tn": 5,
+          "tp": 9
+        },
+        "f1": 0.5455,
+        "precision": 0.8182,
+        "recall": 0.4091
+      }
+    },
+    "structure_edit": {
+      "logistic": {
+        "accuracy": 0.6897,
+        "auc": 0.6071,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 4,
+          "tn": 3,
+          "tp": 17
+        },
+        "f1": 0.7907,
+        "precision": 0.8095,
+        "recall": 0.7727
+      },
+      "majority": {
+        "accuracy": 0.2414,
+        "auc": 0.5,
+        "confusion_matrix": {
+          "fn": 22,
+          "fp": 0,
+          "tn": 7,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "random_forest": {
+        "accuracy": 0.6897,
+        "auc": 0.6331,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 4,
+          "tn": 3,
+          "tp": 17
+        },
+        "f1": 0.7907,
+        "precision": 0.8095,
+        "recall": 0.7727
+      },
+      "xgboost": {
+        "accuracy": 0.5862,
+        "auc": 0.6364,
+        "confusion_matrix": {
+          "fn": 11,
+          "fp": 1,
+          "tn": 6,
+          "tp": 11
+        },
+        "f1": 0.6471,
+        "precision": 0.9167,
+        "recall": 0.5
+      }
+    }
+  },
+  "no_leakage_audit": {
+    "forbidden_tokens": [
+      "b_latency",
+      "b_resource",
+      "b_result",
+      "b_status",
+      "best_flag",
+      "delta",
+      "pressure_class",
+      "rank",
+      "score",
+      "target_latency",
+      "target_resources",
+      "target_result",
+      "target_status"
+    ],
+    "passed": true,
+    "public_rows_checked": 117,
+    "violation_count": 0,
+    "violations": []
+  },
+  "test_positive": 22,
+  "test_rows": 29,
+  "train_positive": 37,
+  "train_rows": 88
+}

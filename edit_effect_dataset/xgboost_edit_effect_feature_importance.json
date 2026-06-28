@@ -1,0 +1,234 @@
+[
+  {
+    "feature": "left_num_edit_groups",
+    "gain": 101.4793701171875
+  },
+  {
+    "feature": "right_num_edit_groups",
+    "gain": 98.30880737304688
+  },
+  {
+    "feature": "left_partition_count_after",
+    "gain": 71.46184539794922
+  },
+  {
+    "feature": "right_has_pipeline",
+    "gain": 70.31961059570312
+  },
+  {
+    "feature": "right_partition_count_after",
+    "gain": 67.77064514160156
+  },
+  {
+    "feature": "tier_hard_negative",
+    "gain": 63.90315628051758
+  },
+  {
+    "feature": "left_partition_factor_after_avg",
+    "gain": 53.121456146240234
+  },
+  {
+    "feature": "kernel_gemm",
+    "gain": 50.89037322998047
+  },
+  {
+    "feature": "right_has_array_partition",
+    "gain": 48.84229278564453
+  },
+  {
+    "feature": "a_dataflow",
+    "gain": 46.10017013549805
+  },
+  {
+    "feature": "left_pipeline_ii_after",
+    "gain": 45.98879623413086
+  },
+  {
+    "feature": "kernel_atax",
+    "gain": 44.400028228759766
+  },
+  {
+    "feature": "right_dataflow_before",
+    "gain": 42.23699188232422
+  },
+  {
+    "feature": "right_partition_factor_after_avg",
+    "gain": 40.94334030151367
+  },
+  {
+    "feature": "left_dataflow_before",
+    "gain": 39.83365249633789
+  },
+  {
+    "feature": "left_has_pipeline",
+    "gain": 39.3248291015625
+  },
+  {
+    "feature": "right_has_unroll",
+    "gain": 33.74532699584961
+  },
+  {
+    "feature": "a_status_SUCCESS",
+    "gain": 31.636341094970703
+  },
+  {
+    "feature": "left_partition_factor_ratio",
+    "gain": 31.30038070678711
+  },
+  {
+    "feature": "right_partition_factor_ratio",
+    "gain": 30.51228141784668
+  },
+  {
+    "feature": "left_pipeline_enabled_before",
+    "gain": 28.881805419921875
+  },
+  {
+    "feature": "left_has_dataflow",
+    "gain": 28.76918601989746
+  },
+  {
+    "feature": "task_feasibility_repair",
+    "gain": 26.679271697998047
+  },
+  {
+    "feature": "right_has_dataflow",
+    "gain": 25.768112182617188
+  },
+  {
+    "feature": "right_pipeline_enabled_before",
+    "gain": 23.4158935546875
+  },
+  {
+    "feature": "left_partition_factor_before_avg",
+    "gain": 23.09616470336914
+  },
+  {
+    "feature": "left_dataflow_after",
+    "gain": 22.78449821472168
+  },
+  {
+    "feature": "left_has_array_partition",
+    "gain": 21.08934783935547
+  },
+  {
+    "feature": "left_has_unroll",
+    "gain": 20.567623138427734
+  },
+  {
+    "feature": "right_dataflow_after",
+    "gain": 20.235050201416016
+  },
+  {
+    "feature": "kernel_gemm_blocked",
+    "gain": 18.156707763671875
+  },
+  {
+    "feature": "a_BRAM_log",
+    "gain": 17.766401290893555
+  },
+  {
+    "feature": "a_FF_log",
+    "gain": 17.72222328186035
+  },
+  {
+    "feature": "left_partition_count_before",
+    "gain": 17.60788917541504
+  },
+  {
+    "feature": "tier_medium_negative",
+    "gain": 16.637073516845703
+  },
+  {
+    "feature": "a_total_resources_log",
+    "gain": 15.018362045288086
+  },
+  {
+    "feature": "right_partition_factor_before_avg",
+    "gain": 12.664383888244629
+  },
+  {
+    "feature": "right_partition_count_before",
+    "gain": 12.381929397583008
+  },
+  {
+    "feature": "a_partition_count",
+    "gain": 12.309684753417969
+  },
+  {
+    "feature": "left_unroll_after",
+    "gain": 12.217182159423828
+  },
+  {
+    "feature": "left_pipeline_ii_before",
+    "gain": 10.67138671875
+  },
+  {
+    "feature": "a_DSP_log",
+    "gain": 10.196115493774414
+  },
+  {
+    "feature": "left_unroll_before",
+    "gain": 9.874049186706543
+  },
+  {
+    "feature": "a_status_TIMEOUT",
+    "gain": 9.276302337646484
+  },
+  {
+    "feature": "right_pipeline_ii_before",
+    "gain": 8.292768478393555
+  },
+  {
+    "feature": "a_partition_factor_max",
+    "gain": 8.128362655639648
+  },
+  {
+    "feature": "left_unroll_ratio",
+    "gain": 8.021324157714844
+  },
+  {
+    "feature": "right_unroll_ratio",
+    "gain": 7.512180328369141
+  },
+  {
+    "feature": "kernel_bicg",
+    "gain": 7.499439716339111
+  },
+  {
+    "feature": "right_unroll_after",
+    "gain": 7.423068046569824
+  },
+  {
+    "feature": "right_unroll_before",
+    "gain": 7.2814483642578125
+  },
+  {
+    "feature": "a_LUT_log",
+    "gain": 7.04810094833374
+  },
+  {
+    "feature": "tier_easy_negative",
+    "gain": 6.987161159515381
+  },
+  {
+    "feature": "right_pipeline_ii_after",
+    "gain": 6.693674087524414
+  },
+  {
+    "feature": "a_partition_cyclic_count",
+    "gain": 4.6310296058654785
+  },
+  {
+    "feature": "a_latency_log",
+    "gain": 3.967191219329834
+  },
+  {
+    "feature": "a_unroll",
+    "gain": 3.6640350818634033
+  },
+  {
+    "feature": "a_partition_block_count",
+    "gain": 3.4863386154174805
+  }
+]

@@ -1,0 +1,797 @@
+{
+  "all": {
+    "by_kernel": {
+      "atax": 2356,
+      "bicg": 841,
+      "gemm": 507
+    },
+    "by_negative_tier": {
+      "easy_negative": 433,
+      "hard_negative": 1705,
+      "medium_negative": 1566
+    },
+    "pairs": 3704,
+    "unique_a": 82,
+    "unique_edit_pattern": 656
+  },
+  "dataset": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\all_edit_preferences.jsonl",
+  "evaluation": {
+    "feature_sets": {
+      "a_config_edit": {
+        "kernel:atax": {
+          "accuracy": 0.991,
+          "auc": 0.9985,
+          "confusion_matrix": {
+            "fn": 2,
+            "fp": 1,
+            "tn": 180,
+            "tp": 150
+          },
+          "f1": 0.9901,
+          "precision": 0.9934,
+          "recall": 0.9868
+        },
+        "kernel:bicg": {
+          "accuracy": 0.9483,
+          "auc": 0.9694,
+          "confusion_matrix": {
+            "fn": 10,
+            "fp": 5,
+            "tn": 142,
+            "tp": 133
+          },
+          "f1": 0.9466,
+          "precision": 0.9638,
+          "recall": 0.9301
+        },
+        "kernel:gemm": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 29,
+            "tp": 49
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:easy_negative": {
+          "accuracy": 0.9808,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 2,
+            "tn": 40,
+            "tp": 62
+          },
+          "f1": 0.9841,
+          "precision": 0.9688,
+          "recall": 1.0
+        },
+        "negative_tier:hard_negative": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 198,
+            "tp": 161
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:medium_negative": {
+          "accuracy": 0.9328,
+          "auc": 0.9773,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 4,
+            "tn": 113,
+            "tp": 109
+          },
+          "f1": 0.9316,
+          "precision": 0.9646,
+          "recall": 0.9008
+        },
+        "overall": {
+          "accuracy": 0.9743,
+          "auc": 0.9862,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 6,
+            "tn": 351,
+            "tp": 332
+          },
+          "f1": 0.9736,
+          "precision": 0.9822,
+          "recall": 0.9651
+        },
+        "task:qor_optimization": {
+          "accuracy": 0.9743,
+          "auc": 0.9862,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 6,
+            "tn": 351,
+            "tp": 332
+          },
+          "f1": 0.9736,
+          "precision": 0.9822,
+          "recall": 0.9651
+        }
+      },
+      "a_result_edit": {
+        "kernel:atax": {
+          "accuracy": 0.994,
+          "auc": 0.9985,
+          "confusion_matrix": {
+            "fn": 2,
+            "fp": 0,
+            "tn": 181,
+            "tp": 150
+          },
+          "f1": 0.9934,
+          "precision": 1.0,
+          "recall": 0.9868
+        },
+        "kernel:bicg": {
+          "accuracy": 0.9517,
+          "auc": 0.9693,
+          "confusion_matrix": {
+            "fn": 10,
+            "fp": 4,
+            "tn": 143,
+            "tp": 133
+          },
+          "f1": 0.95,
+          "precision": 0.9708,
+          "recall": 0.9301
+        },
+        "kernel:gemm": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 29,
+            "tp": 49
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:easy_negative": {
+          "accuracy": 0.9904,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 1,
+            "tn": 41,
+            "tp": 62
+          },
+          "f1": 0.992,
+          "precision": 0.9841,
+          "recall": 1.0
+        },
+        "negative_tier:hard_negative": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 198,
+            "tp": 161
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:medium_negative": {
+          "accuracy": 0.937,
+          "auc": 0.9782,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 3,
+            "tn": 114,
+            "tp": 109
+          },
+          "f1": 0.9356,
+          "precision": 0.9732,
+          "recall": 0.9008
+        },
+        "overall": {
+          "accuracy": 0.9772,
+          "auc": 0.9867,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 4,
+            "tn": 353,
+            "tp": 332
+          },
+          "f1": 0.9765,
+          "precision": 0.9881,
+          "recall": 0.9651
+        },
+        "task:qor_optimization": {
+          "accuracy": 0.9772,
+          "auc": 0.9867,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 4,
+            "tn": 353,
+            "tp": 332
+          },
+          "f1": 0.9765,
+          "precision": 0.9881,
+          "recall": 0.9651
+        }
+      },
+      "edit_only": {
+        "kernel:atax": {
+          "accuracy": 0.994,
+          "auc": 0.999,
+          "confusion_matrix": {
+            "fn": 2,
+            "fp": 0,
+            "tn": 181,
+            "tp": 150
+          },
+          "f1": 0.9934,
+          "precision": 1.0,
+          "recall": 0.9868
+        },
+        "kernel:bicg": {
+          "accuracy": 0.9483,
+          "auc": 0.9638,
+          "confusion_matrix": {
+            "fn": 11,
+            "fp": 4,
+            "tn": 143,
+            "tp": 132
+          },
+          "f1": 0.9462,
+          "precision": 0.9706,
+          "recall": 0.9231
+        },
+        "kernel:gemm": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 29,
+            "tp": 49
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:easy_negative": {
+          "accuracy": 0.9904,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 1,
+            "tn": 41,
+            "tp": 62
+          },
+          "f1": 0.992,
+          "precision": 0.9841,
+          "recall": 1.0
+        },
+        "negative_tier:hard_negative": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 198,
+            "tp": 161
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:medium_negative": {
+          "accuracy": 0.9328,
+          "auc": 0.9763,
+          "confusion_matrix": {
+            "fn": 13,
+            "fp": 3,
+            "tn": 114,
+            "tp": 108
+          },
+          "f1": 0.931,
+          "precision": 0.973,
+          "recall": 0.8926
+        },
+        "overall": {
+          "accuracy": 0.9757,
+          "auc": 0.9851,
+          "confusion_matrix": {
+            "fn": 13,
+            "fp": 4,
+            "tn": 353,
+            "tp": 331
+          },
+          "f1": 0.975,
+          "precision": 0.9881,
+          "recall": 0.9622
+        },
+        "task:qor_optimization": {
+          "accuracy": 0.9757,
+          "auc": 0.9851,
+          "confusion_matrix": {
+            "fn": 13,
+            "fp": 4,
+            "tn": 353,
+            "tp": 331
+          },
+          "f1": 0.975,
+          "precision": 0.9881,
+          "recall": 0.9622
+        }
+      },
+      "edit_structure": {
+        "kernel:atax": {
+          "accuracy": 0.994,
+          "auc": 0.9991,
+          "confusion_matrix": {
+            "fn": 2,
+            "fp": 0,
+            "tn": 181,
+            "tp": 150
+          },
+          "f1": 0.9934,
+          "precision": 1.0,
+          "recall": 0.9868
+        },
+        "kernel:bicg": {
+          "accuracy": 0.9517,
+          "auc": 0.966,
+          "confusion_matrix": {
+            "fn": 10,
+            "fp": 4,
+            "tn": 143,
+            "tp": 133
+          },
+          "f1": 0.95,
+          "precision": 0.9708,
+          "recall": 0.9301
+        },
+        "kernel:gemm": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 29,
+            "tp": 49
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:easy_negative": {
+          "accuracy": 0.9904,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 1,
+            "tn": 41,
+            "tp": 62
+          },
+          "f1": 0.992,
+          "precision": 0.9841,
+          "recall": 1.0
+        },
+        "negative_tier:hard_negative": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 198,
+            "tp": 161
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:medium_negative": {
+          "accuracy": 0.937,
+          "auc": 0.9756,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 3,
+            "tn": 114,
+            "tp": 109
+          },
+          "f1": 0.9356,
+          "precision": 0.9732,
+          "recall": 0.9008
+        },
+        "overall": {
+          "accuracy": 0.9772,
+          "auc": 0.9855,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 4,
+            "tn": 353,
+            "tp": 332
+          },
+          "f1": 0.9765,
+          "precision": 0.9881,
+          "recall": 0.9651
+        },
+        "task:qor_optimization": {
+          "accuracy": 0.9772,
+          "auc": 0.9855,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 4,
+            "tn": 353,
+            "tp": 332
+          },
+          "f1": 0.9765,
+          "precision": 0.9881,
+          "recall": 0.9651
+        }
+      },
+      "full": {
+        "kernel:atax": {
+          "accuracy": 0.991,
+          "auc": 0.9992,
+          "confusion_matrix": {
+            "fn": 2,
+            "fp": 1,
+            "tn": 180,
+            "tp": 150
+          },
+          "f1": 0.9901,
+          "precision": 0.9934,
+          "recall": 0.9868
+        },
+        "kernel:bicg": {
+          "accuracy": 0.9448,
+          "auc": 0.9663,
+          "confusion_matrix": {
+            "fn": 11,
+            "fp": 5,
+            "tn": 142,
+            "tp": 132
+          },
+          "f1": 0.9429,
+          "precision": 0.9635,
+          "recall": 0.9231
+        },
+        "kernel:gemm": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 29,
+            "tp": 49
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:easy_negative": {
+          "accuracy": 0.9904,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 1,
+            "tn": 41,
+            "tp": 62
+          },
+          "f1": 0.992,
+          "precision": 0.9841,
+          "recall": 1.0
+        },
+        "negative_tier:hard_negative": {
+          "accuracy": 0.9972,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 1,
+            "tn": 197,
+            "tp": 161
+          },
+          "f1": 0.9969,
+          "precision": 0.9938,
+          "recall": 1.0
+        },
+        "negative_tier:medium_negative": {
+          "accuracy": 0.9286,
+          "auc": 0.9761,
+          "confusion_matrix": {
+            "fn": 13,
+            "fp": 4,
+            "tn": 113,
+            "tp": 108
+          },
+          "f1": 0.927,
+          "precision": 0.9643,
+          "recall": 0.8926
+        },
+        "overall": {
+          "accuracy": 0.9729,
+          "auc": 0.9855,
+          "confusion_matrix": {
+            "fn": 13,
+            "fp": 6,
+            "tn": 351,
+            "tp": 331
+          },
+          "f1": 0.9721,
+          "precision": 0.9822,
+          "recall": 0.9622
+        },
+        "task:qor_optimization": {
+          "accuracy": 0.9729,
+          "auc": 0.9855,
+          "confusion_matrix": {
+            "fn": 13,
+            "fp": 6,
+            "tn": 351,
+            "tp": 331
+          },
+          "f1": 0.9721,
+          "precision": 0.9822,
+          "recall": 0.9622
+        }
+      },
+      "full_no_structure": {
+        "kernel:atax": {
+          "accuracy": 0.994,
+          "auc": 0.9985,
+          "confusion_matrix": {
+            "fn": 2,
+            "fp": 0,
+            "tn": 181,
+            "tp": 150
+          },
+          "f1": 0.9934,
+          "precision": 1.0,
+          "recall": 0.9868
+        },
+        "kernel:bicg": {
+          "accuracy": 0.9483,
+          "auc": 0.9689,
+          "confusion_matrix": {
+            "fn": 10,
+            "fp": 5,
+            "tn": 142,
+            "tp": 133
+          },
+          "f1": 0.9466,
+          "precision": 0.9638,
+          "recall": 0.9301
+        },
+        "kernel:gemm": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 29,
+            "tp": 49
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:easy_negative": {
+          "accuracy": 0.9808,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 2,
+            "tn": 40,
+            "tp": 62
+          },
+          "f1": 0.9841,
+          "precision": 0.9688,
+          "recall": 1.0
+        },
+        "negative_tier:hard_negative": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 198,
+            "tp": 161
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:medium_negative": {
+          "accuracy": 0.937,
+          "auc": 0.9765,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 3,
+            "tn": 114,
+            "tp": 109
+          },
+          "f1": 0.9356,
+          "precision": 0.9732,
+          "recall": 0.9008
+        },
+        "overall": {
+          "accuracy": 0.9757,
+          "auc": 0.9862,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 5,
+            "tn": 352,
+            "tp": 332
+          },
+          "f1": 0.975,
+          "precision": 0.9852,
+          "recall": 0.9651
+        },
+        "task:qor_optimization": {
+          "accuracy": 0.9757,
+          "auc": 0.9862,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 5,
+            "tn": 352,
+            "tp": 332
+          },
+          "f1": 0.975,
+          "precision": 0.9852,
+          "recall": 0.9651
+        }
+      },
+      "shuffled_a_result": {
+        "kernel:atax": {
+          "accuracy": 0.994,
+          "auc": 0.9989,
+          "confusion_matrix": {
+            "fn": 2,
+            "fp": 0,
+            "tn": 181,
+            "tp": 150
+          },
+          "f1": 0.9934,
+          "precision": 1.0,
+          "recall": 0.9868
+        },
+        "kernel:bicg": {
+          "accuracy": 0.9517,
+          "auc": 0.9712,
+          "confusion_matrix": {
+            "fn": 10,
+            "fp": 4,
+            "tn": 143,
+            "tp": 133
+          },
+          "f1": 0.95,
+          "precision": 0.9708,
+          "recall": 0.9301
+        },
+        "kernel:gemm": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 29,
+            "tp": 49
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:easy_negative": {
+          "accuracy": 0.9904,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 1,
+            "tn": 41,
+            "tp": 62
+          },
+          "f1": 0.992,
+          "precision": 0.9841,
+          "recall": 1.0
+        },
+        "negative_tier:hard_negative": {
+          "accuracy": 1.0,
+          "auc": 1.0,
+          "confusion_matrix": {
+            "fn": 0,
+            "fp": 0,
+            "tn": 198,
+            "tp": 161
+          },
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "negative_tier:medium_negative": {
+          "accuracy": 0.937,
+          "auc": 0.9804,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 3,
+            "tn": 114,
+            "tp": 109
+          },
+          "f1": 0.9356,
+          "precision": 0.9732,
+          "recall": 0.9008
+        },
+        "overall": {
+          "accuracy": 0.9772,
+          "auc": 0.9868,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 4,
+            "tn": 353,
+            "tp": 332
+          },
+          "f1": 0.9765,
+          "precision": 0.9881,
+          "recall": 0.9651
+        },
+        "task:qor_optimization": {
+          "accuracy": 0.9772,
+          "auc": 0.9868,
+          "confusion_matrix": {
+            "fn": 12,
+            "fp": 4,
+            "tn": 353,
+            "tp": 332
+          },
+          "f1": 0.9765,
+          "precision": 0.9881,
+          "recall": 0.9651
+        }
+      }
+    },
+    "test": {
+      "by_kernel": {
+        "atax": 333,
+        "bicg": 290,
+        "gemm": 78
+      },
+      "by_negative_tier": {
+        "easy_negative": 104,
+        "hard_negative": 359,
+        "medium_negative": 238
+      },
+      "pairs": 701,
+      "unique_a": 18,
+      "unique_edit_pattern": 261
+    },
+    "train": {
+      "by_kernel": {
+        "atax": 2023,
+        "bicg": 551,
+        "gemm": 429
+      },
+      "by_negative_tier": {
+        "easy_negative": 329,
+        "hard_negative": 1346,
+        "medium_negative": 1328
+      },
+      "pairs": 3003,
+      "unique_a": 64,
+      "unique_edit_pattern": 620
+    }
+  },
+  "split": "config_isolated",
+  "task": "qor_optimization_only",
+  "train_test_a_config_overlap": 0
+}

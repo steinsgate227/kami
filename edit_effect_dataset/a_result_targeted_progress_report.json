@@ -1,0 +1,154 @@
+{
+  "by_kernel": {
+    "atax": 6,
+    "bicg": 34,
+    "gemm": 81,
+    "gemm_blocked": 57
+  },
+  "by_pressure_status": {
+    "overflow_DSP": {
+      "EXCEEDED": 41,
+      "SUCCESS": 5
+    },
+    "overflow_DSP_LUT": {
+      "EXCEEDED": 9
+    },
+    "overflow_DSP_LUT_FF": {
+      "TIMEOUT": 5
+    },
+    "overflow_LUT_FF": {
+      "TIMEOUT": 15
+    },
+    "resource_room": {
+      "EXCEEDED": 9,
+      "SUCCESS": 76,
+      "TIMEOUT": 9
+    },
+    "timeout": {
+      "TIMEOUT": 9
+    }
+  },
+  "by_status": {
+    "EXCEEDED": 59,
+    "SUCCESS": 81,
+    "TIMEOUT": 38
+  },
+  "causal_contrast_templates": [
+    {
+      "kernel": "gemm",
+      "room_success": 4,
+      "stressed_bad": 21,
+      "template": "unroll_increase_to_16"
+    },
+    {
+      "kernel": "gemm",
+      "room_success": 1,
+      "stressed_bad": 10,
+      "template": "unroll_increase_to_2"
+    },
+    {
+      "kernel": "gemm",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "partition_variant_013"
+    },
+    {
+      "kernel": "gemm",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "partition_variant_012"
+    },
+    {
+      "kernel": "gemm",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "partition_variant_018"
+    },
+    {
+      "kernel": "gemm",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "partition_variant_017"
+    },
+    {
+      "kernel": "gemm_blocked",
+      "room_success": 22,
+      "stressed_bad": 5,
+      "template": "partition_variant_001"
+    },
+    {
+      "kernel": "gemm_blocked",
+      "room_success": 11,
+      "stressed_bad": 4,
+      "template": "partition_variant_000"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "unroll_increase_to_16"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "partition_variant_003"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 2,
+      "stressed_bad": 1,
+      "template": "partition_variant_007"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 2,
+      "stressed_bad": 1,
+      "template": "partition_variant_005"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 2,
+      "stressed_bad": 2,
+      "template": "partition_variant_002"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 2,
+      "stressed_bad": 1,
+      "template": "partition_variant_004"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 2,
+      "stressed_bad": 1,
+      "template": "partition_variant_006"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "partition_variant_008"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 2,
+      "stressed_bad": 2,
+      "template": "partition_variant_010"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 1,
+      "stressed_bad": 1,
+      "template": "partition_variant_009"
+    },
+    {
+      "kernel": "bicg",
+      "room_success": 1,
+      "stressed_bad": 2,
+      "template": "partition_variant_011"
+    }
+  ],
+  "causal_contrast_templates_found": 19,
+  "completed_results": 178
+}

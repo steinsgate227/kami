@@ -1,0 +1,243 @@
+{
+  "all": {
+    "by_kernel": {
+      "atax": 719,
+      "bicg": 104,
+      "gemm": 63,
+      "gemm_blocked": 23
+    },
+    "by_negative_tier": {
+      "hard_negative": 648,
+      "medium_negative": 261
+    },
+    "by_task": {
+      "feasibility_repair": 502,
+      "qor_optimization": 407
+    },
+    "name": "all",
+    "pairs": 909,
+    "unique_a": 110,
+    "unique_abstract_pair_patterns": 575
+  },
+  "ambiguous_candidate_edit_signatures": 276,
+  "candidate_edit_signatures": 1102,
+  "eval_headline": {
+    "abstract_pattern_isolated": {
+      "a_config_edit": {
+        "accuracy": 0.9655,
+        "auc": 0.995,
+        "confusion_matrix": {
+          "fn": 4,
+          "fp": 3,
+          "tn": 99,
+          "tp": 97
+        },
+        "f1": 0.9652,
+        "precision": 0.97,
+        "recall": 0.9604
+      },
+      "a_result_edit": {
+        "accuracy": 0.9704,
+        "auc": 0.9929,
+        "confusion_matrix": {
+          "fn": 4,
+          "fp": 2,
+          "tn": 100,
+          "tp": 97
+        },
+        "f1": 0.97,
+        "precision": 0.9798,
+        "recall": 0.9604
+      },
+      "edit_only": {
+        "accuracy": 0.9704,
+        "auc": 0.9947,
+        "confusion_matrix": {
+          "fn": 4,
+          "fp": 2,
+          "tn": 100,
+          "tp": 97
+        },
+        "f1": 0.97,
+        "precision": 0.9798,
+        "recall": 0.9604
+      },
+      "full": {
+        "accuracy": 0.9655,
+        "auc": 0.995,
+        "confusion_matrix": {
+          "fn": 4,
+          "fp": 3,
+          "tn": 99,
+          "tp": 97
+        },
+        "f1": 0.9652,
+        "precision": 0.97,
+        "recall": 0.9604
+      },
+      "full_no_structure": {
+        "accuracy": 0.9754,
+        "auc": 0.9939,
+        "confusion_matrix": {
+          "fn": 3,
+          "fp": 2,
+          "tn": 100,
+          "tp": 98
+        },
+        "f1": 0.9751,
+        "precision": 0.98,
+        "recall": 0.9703
+      },
+      "shuffled_a_result": {
+        "accuracy": 0.9507,
+        "auc": 0.9921,
+        "confusion_matrix": {
+          "fn": 6,
+          "fp": 4,
+          "tn": 98,
+          "tp": 95
+        },
+        "f1": 0.95,
+        "precision": 0.9596,
+        "recall": 0.9406
+      }
+    },
+    "config_isolated": {
+      "a_config_edit": {
+        "accuracy": 0.9662,
+        "auc": 0.9953,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 3,
+          "tn": 118,
+          "tp": 111
+        },
+        "f1": 0.9652,
+        "precision": 0.9737,
+        "recall": 0.9569
+      },
+      "a_result_edit": {
+        "accuracy": 0.9662,
+        "auc": 0.9943,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 3,
+          "tn": 118,
+          "tp": 111
+        },
+        "f1": 0.9652,
+        "precision": 0.9737,
+        "recall": 0.9569
+      },
+      "edit_only": {
+        "accuracy": 0.9662,
+        "auc": 0.9953,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 3,
+          "tn": 118,
+          "tp": 111
+        },
+        "f1": 0.9652,
+        "precision": 0.9737,
+        "recall": 0.9569
+      },
+      "full": {
+        "accuracy": 0.9747,
+        "auc": 0.9962,
+        "confusion_matrix": {
+          "fn": 3,
+          "fp": 3,
+          "tn": 118,
+          "tp": 113
+        },
+        "f1": 0.9741,
+        "precision": 0.9741,
+        "recall": 0.9741
+      },
+      "full_no_structure": {
+        "accuracy": 0.9578,
+        "auc": 0.9945,
+        "confusion_matrix": {
+          "fn": 6,
+          "fp": 4,
+          "tn": 117,
+          "tp": 110
+        },
+        "f1": 0.9565,
+        "precision": 0.9649,
+        "recall": 0.9483
+      },
+      "shuffled_a_result": {
+        "accuracy": 0.9662,
+        "auc": 0.988,
+        "confusion_matrix": {
+          "fn": 5,
+          "fp": 3,
+          "tn": 118,
+          "tp": 111
+        },
+        "f1": 0.9652,
+        "precision": 0.9737,
+        "recall": 0.9569
+      }
+    }
+  },
+  "files": {
+    "all": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\ultrahard_all_edit_preferences.jsonl",
+    "eval": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\ultrahard_eval_report.json",
+    "summary": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\ultrahard_dataset_summary.json",
+    "test": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\ultrahard_test_edit_preferences.jsonl",
+    "train": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\ultrahard_train_edit_preferences.jsonl"
+  },
+  "purpose": "Ultra-hard subset: good/bad edits share the same pragma groups, and both candidate edit abstractions are globally ambiguous.",
+  "rules": {
+    "both_ambiguous": "both candidate edits appear as good and bad elsewhere with good_rate 0.2-0.8 and total >= 8",
+    "cap": "max 5 rows per (kernel, task, tier, abstract pair pattern)",
+    "negative_tier": "keep hard and medium negatives only",
+    "same_groups": "good_edit and bad_edit modify the same pragma group set"
+  },
+  "source": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\all_edit_preferences.jsonl",
+  "test": {
+    "by_kernel": {
+      "atax": 176,
+      "bicg": 36,
+      "gemm": 15,
+      "gemm_blocked": 10
+    },
+    "by_negative_tier": {
+      "hard_negative": 151,
+      "medium_negative": 86
+    },
+    "by_task": {
+      "feasibility_repair": 127,
+      "qor_optimization": 110
+    },
+    "name": "test",
+    "pairs": 237,
+    "unique_a": 24,
+    "unique_abstract_pair_patterns": 197
+  },
+  "train": {
+    "by_kernel": {
+      "atax": 543,
+      "bicg": 68,
+      "gemm": 48,
+      "gemm_blocked": 13
+    },
+    "by_negative_tier": {
+      "hard_negative": 497,
+      "medium_negative": 175
+    },
+    "by_task": {
+      "feasibility_repair": 375,
+      "qor_optimization": 297
+    },
+    "name": "train",
+    "pairs": 672,
+    "unique_a": 86,
+    "unique_abstract_pair_patterns": 471
+  },
+  "train_test_a_config_overlap": 0,
+  "train_test_abstract_edit_pattern_overlap": 93
+}

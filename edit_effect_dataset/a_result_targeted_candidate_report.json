@@ -1,0 +1,25 @@
+{
+  "by_kernel": {
+    "atax": 40,
+    "bicg": 40,
+    "gemm": 120,
+    "gemm_blocked": 140
+  },
+  "by_seed_pressure": {
+    "overflow_DSP": 68,
+    "overflow_DSP_LUT": 23,
+    "overflow_DSP_LUT_FF": 22,
+    "overflow_LUT_FF": 15,
+    "resource_room": 183,
+    "timeout": 29
+  },
+  "by_template_prefix": {
+    "dataflow": 119,
+    "partition": 163,
+    "unroll": 58
+  },
+  "candidates": 340,
+  "input_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\merged_results_with_qor_v2.csv",
+  "output_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_candidates.csv",
+  "purpose": "Run same local edit templates across resource_room and stressed A_results to create A_result-dependent labels."
+}

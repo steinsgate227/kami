@@ -1,0 +1,124 @@
+{
+  "all": {
+    "by_edit_template": {
+      "partition_variant_000": 15,
+      "partition_variant_001": 27,
+      "partition_variant_002": 4,
+      "partition_variant_003": 2,
+      "partition_variant_004": 3,
+      "partition_variant_005": 3,
+      "partition_variant_006": 3,
+      "partition_variant_007": 3,
+      "partition_variant_008": 2,
+      "partition_variant_009": 2,
+      "partition_variant_010": 4,
+      "partition_variant_011": 3,
+      "partition_variant_012": 2,
+      "partition_variant_013": 2,
+      "partition_variant_017": 2,
+      "partition_variant_018": 2,
+      "unroll_increase_to_16": 27,
+      "unroll_increase_to_2": 11
+    },
+    "by_kernel": {
+      "bicg": 31,
+      "gemm": 44,
+      "gemm_blocked": 42
+    },
+    "examples": 117,
+    "name": "all",
+    "negative": 58,
+    "positive": 59
+  },
+  "files": {
+    "all": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_causal_examples.jsonl",
+    "audit": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_causal_audit_private.jsonl",
+    "summary": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_causal_summary.json",
+    "test": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_causal_test.jsonl",
+    "train": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_causal_train.jsonl"
+  },
+  "purpose": "No-leakage binary examples where the same edit template succeeds under resource_room A_result but fails/overflows under stressed A_result.",
+  "test": {
+    "by_edit_template": {
+      "partition_variant_000": 2,
+      "partition_variant_001": 10,
+      "partition_variant_002": 2,
+      "partition_variant_004": 1,
+      "partition_variant_005": 1,
+      "partition_variant_006": 1,
+      "partition_variant_007": 1,
+      "partition_variant_009": 1,
+      "partition_variant_010": 2,
+      "partition_variant_011": 1,
+      "partition_variant_012": 1,
+      "partition_variant_013": 1,
+      "partition_variant_017": 1,
+      "partition_variant_018": 1,
+      "unroll_increase_to_16": 2,
+      "unroll_increase_to_2": 1
+    },
+    "by_kernel": {
+      "bicg": 10,
+      "gemm": 7,
+      "gemm_blocked": 12
+    },
+    "examples": 29,
+    "name": "test",
+    "negative": 7,
+    "positive": 22
+  },
+  "train": {
+    "by_edit_template": {
+      "partition_variant_000": 13,
+      "partition_variant_001": 17,
+      "partition_variant_002": 2,
+      "partition_variant_003": 2,
+      "partition_variant_004": 2,
+      "partition_variant_005": 2,
+      "partition_variant_006": 2,
+      "partition_variant_007": 2,
+      "partition_variant_008": 2,
+      "partition_variant_009": 1,
+      "partition_variant_010": 2,
+      "partition_variant_011": 2,
+      "partition_variant_012": 1,
+      "partition_variant_013": 1,
+      "partition_variant_017": 1,
+      "partition_variant_018": 1,
+      "unroll_increase_to_16": 25,
+      "unroll_increase_to_2": 10
+    },
+    "by_kernel": {
+      "bicg": 21,
+      "gemm": 37,
+      "gemm_blocked": 30
+    },
+    "examples": 88,
+    "name": "train",
+    "negative": 51,
+    "positive": 37
+  },
+  "train_test_a_config_overlap": 0,
+  "valid_contrast_keys": [
+    "bicg::partition_variant_002",
+    "bicg::partition_variant_003",
+    "bicg::partition_variant_004",
+    "bicg::partition_variant_005",
+    "bicg::partition_variant_006",
+    "bicg::partition_variant_007",
+    "bicg::partition_variant_008",
+    "bicg::partition_variant_009",
+    "bicg::partition_variant_010",
+    "bicg::partition_variant_011",
+    "bicg::unroll_increase_to_16",
+    "gemm::partition_variant_012",
+    "gemm::partition_variant_013",
+    "gemm::partition_variant_017",
+    "gemm::partition_variant_018",
+    "gemm::unroll_increase_to_16",
+    "gemm::unroll_increase_to_2",
+    "gemm_blocked::partition_variant_000",
+    "gemm_blocked::partition_variant_001"
+  ],
+  "visibility": "Public files include A_config, A_result, candidate_B_config and edit_ops only; target_result is audit_private."
+}

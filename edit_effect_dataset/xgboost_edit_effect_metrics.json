@@ -1,0 +1,314 @@
+{
+  "dataset": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset",
+  "task": "given same A, choose better edit",
+  "test": {
+    "accuracy": 0.9001,
+    "confusion_matrix": {
+      "fn": 187,
+      "fp": 141,
+      "tn": 1468,
+      "tp": 1487
+    },
+    "count": 3283,
+    "f1": 0.9007,
+    "roc_auc": 0.9673
+  },
+  "test_rows": 3283,
+  "test_subgroups": {
+    "kernel:atax": {
+      "accuracy": 0.9279,
+      "confusion_matrix": {
+        "fn": 23,
+        "fp": 39,
+        "tn": 382,
+        "tp": 416
+      },
+      "count": 860,
+      "f1": 0.9306,
+      "roc_auc": 0.9801
+    },
+    "kernel:bicg": {
+      "accuracy": 0.8863,
+      "confusion_matrix": {
+        "fn": 4,
+        "fp": 35,
+        "tn": 130,
+        "tp": 174
+      },
+      "count": 343,
+      "f1": 0.8992,
+      "roc_auc": 0.9675
+    },
+    "kernel:gemm": {
+      "accuracy": 0.8798,
+      "confusion_matrix": {
+        "fn": 155,
+        "fp": 63,
+        "tn": 818,
+        "tp": 778
+      },
+      "count": 1814,
+      "f1": 0.8771,
+      "roc_auc": 0.9625
+    },
+    "kernel:gemm_blocked": {
+      "accuracy": 0.9662,
+      "confusion_matrix": {
+        "fn": 5,
+        "fp": 4,
+        "tn": 138,
+        "tp": 119
+      },
+      "count": 266,
+      "f1": 0.9636,
+      "roc_auc": 0.998
+    },
+    "task:feasibility_repair": {
+      "accuracy": 0.8868,
+      "confusion_matrix": {
+        "fn": 181,
+        "fp": 105,
+        "tn": 1140,
+        "tp": 1100
+      },
+      "count": 2526,
+      "f1": 0.885,
+      "roc_auc": 0.9599
+    },
+    "task:qor_optimization": {
+      "accuracy": 0.9445,
+      "confusion_matrix": {
+        "fn": 6,
+        "fp": 36,
+        "tn": 328,
+        "tp": 387
+      },
+      "count": 757,
+      "f1": 0.9485,
+      "roc_auc": 0.9937
+    },
+    "task_tier:feasibility_repair/easy_negative": {
+      "accuracy": 0.8493,
+      "confusion_matrix": {
+        "fn": 96,
+        "fp": 52,
+        "tn": 427,
+        "tp": 407
+      },
+      "count": 982,
+      "f1": 0.8462,
+      "roc_auc": 0.938
+    },
+    "task_tier:feasibility_repair/hard_negative": {
+      "accuracy": 0.8805,
+      "confusion_matrix": {
+        "fn": 67,
+        "fp": 38,
+        "tn": 411,
+        "tp": 363
+      },
+      "count": 879,
+      "f1": 0.8736,
+      "roc_auc": 0.969
+    },
+    "task_tier:feasibility_repair/medium_negative": {
+      "accuracy": 0.9504,
+      "confusion_matrix": {
+        "fn": 18,
+        "fp": 15,
+        "tn": 302,
+        "tp": 330
+      },
+      "count": 665,
+      "f1": 0.9524,
+      "roc_auc": 0.992
+    },
+    "task_tier:qor_optimization/easy_negative": {
+      "accuracy": 1.0,
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 47,
+        "tp": 42
+      },
+      "count": 89,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "task_tier:qor_optimization/hard_negative": {
+      "accuracy": 0.8347,
+      "confusion_matrix": {
+        "fn": 6,
+        "fp": 35,
+        "tn": 78,
+        "tp": 129
+      },
+      "count": 248,
+      "f1": 0.8629,
+      "roc_auc": 0.958
+    },
+    "task_tier:qor_optimization/medium_negative": {
+      "accuracy": 0.9976,
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 1,
+        "tn": 203,
+        "tp": 216
+      },
+      "count": 420,
+      "f1": 0.9977,
+      "roc_auc": 0.9999
+    },
+    "tier:easy_negative": {
+      "accuracy": 0.8618,
+      "confusion_matrix": {
+        "fn": 96,
+        "fp": 52,
+        "tn": 474,
+        "tp": 449
+      },
+      "count": 1071,
+      "f1": 0.8585,
+      "roc_auc": 0.9476
+    },
+    "tier:hard_negative": {
+      "accuracy": 0.8705,
+      "confusion_matrix": {
+        "fn": 73,
+        "fp": 73,
+        "tn": 489,
+        "tp": 492
+      },
+      "count": 1127,
+      "f1": 0.8708,
+      "roc_auc": 0.9605
+    },
+    "tier:medium_negative": {
+      "accuracy": 0.9687,
+      "confusion_matrix": {
+        "fn": 18,
+        "fp": 16,
+        "tn": 505,
+        "tp": 546
+      },
+      "count": 1085,
+      "f1": 0.9698,
+      "roc_auc": 0.9966
+    }
+  },
+  "top_25_features_by_gain": [
+    {
+      "feature": "left_num_edit_groups",
+      "gain": 101.4793701171875
+    },
+    {
+      "feature": "right_num_edit_groups",
+      "gain": 98.30880737304688
+    },
+    {
+      "feature": "left_partition_count_after",
+      "gain": 71.46184539794922
+    },
+    {
+      "feature": "right_has_pipeline",
+      "gain": 70.31961059570312
+    },
+    {
+      "feature": "right_partition_count_after",
+      "gain": 67.77064514160156
+    },
+    {
+      "feature": "tier_hard_negative",
+      "gain": 63.90315628051758
+    },
+    {
+      "feature": "left_partition_factor_after_avg",
+      "gain": 53.121456146240234
+    },
+    {
+      "feature": "kernel_gemm",
+      "gain": 50.89037322998047
+    },
+    {
+      "feature": "right_has_array_partition",
+      "gain": 48.84229278564453
+    },
+    {
+      "feature": "a_dataflow",
+      "gain": 46.10017013549805
+    },
+    {
+      "feature": "left_pipeline_ii_after",
+      "gain": 45.98879623413086
+    },
+    {
+      "feature": "kernel_atax",
+      "gain": 44.400028228759766
+    },
+    {
+      "feature": "right_dataflow_before",
+      "gain": 42.23699188232422
+    },
+    {
+      "feature": "right_partition_factor_after_avg",
+      "gain": 40.94334030151367
+    },
+    {
+      "feature": "left_dataflow_before",
+      "gain": 39.83365249633789
+    },
+    {
+      "feature": "left_has_pipeline",
+      "gain": 39.3248291015625
+    },
+    {
+      "feature": "right_has_unroll",
+      "gain": 33.74532699584961
+    },
+    {
+      "feature": "a_status_SUCCESS",
+      "gain": 31.636341094970703
+    },
+    {
+      "feature": "left_partition_factor_ratio",
+      "gain": 31.30038070678711
+    },
+    {
+      "feature": "right_partition_factor_ratio",
+      "gain": 30.51228141784668
+    },
+    {
+      "feature": "left_pipeline_enabled_before",
+      "gain": 28.881805419921875
+    },
+    {
+      "feature": "left_has_dataflow",
+      "gain": 28.76918601989746
+    },
+    {
+      "feature": "task_feasibility_repair",
+      "gain": 26.679271697998047
+    },
+    {
+      "feature": "right_has_dataflow",
+      "gain": 25.768112182617188
+    },
+    {
+      "feature": "right_pipeline_enabled_before",
+      "gain": 23.4158935546875
+    }
+  ],
+  "train": {
+    "accuracy": 0.9634,
+    "confusion_matrix": {
+      "fn": 190,
+      "fp": 230,
+      "tn": 5474,
+      "tp": 5570
+    },
+    "count": 11464,
+    "f1": 0.9637,
+    "roc_auc": 0.9964
+  },
+  "train_rows": 11464
+}

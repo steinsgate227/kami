@@ -1,0 +1,36 @@
+{
+  "added_kernel_counts": {
+    "atax": 90,
+    "bicg": 90,
+    "gemm": 140,
+    "gemm_blocked": 160
+  },
+  "added_status_counts": {
+    "EXCEEDED": 124,
+    "FAILED": 81,
+    "SUCCESS": 266,
+    "TIMEOUT": 9
+  },
+  "base_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\merged_results_with_qor.csv",
+  "base_rows": 868,
+  "duplicate_with_base_skipped": 0,
+  "duplicate_within_unique_skipped": 0,
+  "merged_rows": 1348,
+  "out_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\merged_results_with_qor_v2.csv",
+  "unique_added_not_in_base": 480,
+  "unique_qor_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\qor_unique_results.csv",
+  "unique_qor_kernel_counts": {
+    "atax": 90,
+    "bicg": 90,
+    "gemm": 140,
+    "gemm_blocked": 160
+  },
+  "unique_qor_rows": 480,
+  "unique_qor_status_counts": {
+    "EXCEEDED": 124,
+    "FAILED": 81,
+    "SUCCESS": 266,
+    "TIMEOUT": 9
+  },
+  "work_out_csv": "D:\\STEINSGATE2\\zm\\orsoc_graphics_accelerator_latest\\targeted_expansion\\merged_results_with_qor_v2.csv"
+}

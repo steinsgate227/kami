@@ -1,0 +1,672 @@
+{
+  "atax": {
+    "array_access": {
+      "A": {
+        "access_count": 2,
+        "avg_access_depth": 1.0,
+        "dim": 2,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_A": {
+        "access_count": 4,
+        "avg_access_depth": 1.5,
+        "dim": 2,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_x": {
+        "access_count": 3,
+        "avg_access_depth": 1.0,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_y_out": {
+        "access_count": 5,
+        "avg_access_depth": 1.2,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "tmp1": {
+        "access_count": 5,
+        "avg_access_depth": 1.4,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "x": {
+        "access_count": 2,
+        "avg_access_depth": 0.5,
+        "dim": 1,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 1
+      },
+      "y_out": {
+        "access_count": 2,
+        "avg_access_depth": 0.5,
+        "dim": 1,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 1
+      }
+    },
+    "array_dims": {
+      "A": 2,
+      "buff_A": 2,
+      "buff_x": 1,
+      "buff_y_out": 1,
+      "tmp1": 1,
+      "x": 1,
+      "y_out": 1
+    },
+    "arrays_by_loop": {
+      "lp2": {
+        "buff_A": 1,
+        "buff_x": 1,
+        "tmp1": 2
+      },
+      "lp4": {
+        "buff_A": 1,
+        "buff_y_out": 2,
+        "tmp1": 1
+      },
+      "lprd_1": {
+        "buff_x": 1,
+        "buff_y_out": 1,
+        "tmp1": 1,
+        "x": 1
+      },
+      "lprd_2": {
+        "A": 1,
+        "buff_A": 1
+      },
+      "lpwr_1": {
+        "buff_y_out": 1,
+        "y_out": 1
+      }
+    },
+    "dataflow_stage_potential": 1.0,
+    "kernel": "atax",
+    "loop_count": 7,
+    "loop_depth": 2,
+    "loops": [
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lprd_1",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lprd_2",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lp1",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lp2",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lp3",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lp4",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lpwr_1",
+        "tripcount": 64
+      }
+    ],
+    "macros": {
+      "N": 64
+    },
+    "main_arrays": [
+      "A",
+      "buff_A",
+      "buff_x",
+      "buff_y_out",
+      "tmp1",
+      "x",
+      "y_out"
+    ],
+    "matmul_like": 0.0,
+    "max_tripcount": 64,
+    "max_tripcount_log": 4.174387269895637,
+    "source": "D:\\anaconda\\envs\\hlsfactory\\src_polybench\\atax\\src\\atax.c",
+    "top_level_stage_count": 4,
+    "total_tripcount_log": 9.437077458800523,
+    "total_tripcount_proxy": 12544,
+    "two_phase_kernel": 1.0
+  },
+  "bicg": {
+    "array_access": {
+      "A": {
+        "access_count": 2,
+        "avg_access_depth": 1.0,
+        "dim": 2,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_A": {
+        "access_count": 4,
+        "avg_access_depth": 1.5,
+        "dim": 2,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_p": {
+        "access_count": 3,
+        "avg_access_depth": 1.0,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_q_out": {
+        "access_count": 5,
+        "avg_access_depth": 1.2,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_r": {
+        "access_count": 3,
+        "avg_access_depth": 1.0,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_s_out": {
+        "access_count": 5,
+        "avg_access_depth": 1.2,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "p": {
+        "access_count": 2,
+        "avg_access_depth": 0.5,
+        "dim": 1,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 1
+      },
+      "q_out": {
+        "access_count": 2,
+        "avg_access_depth": 0.5,
+        "dim": 1,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 1
+      },
+      "r": {
+        "access_count": 2,
+        "avg_access_depth": 0.5,
+        "dim": 1,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 1
+      },
+      "s_out": {
+        "access_count": 2,
+        "avg_access_depth": 0.5,
+        "dim": 1,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 1
+      }
+    },
+    "array_dims": {
+      "A": 2,
+      "buff_A": 2,
+      "buff_p": 1,
+      "buff_q_out": 1,
+      "buff_r": 1,
+      "buff_s_out": 1,
+      "p": 1,
+      "q_out": 1,
+      "r": 1,
+      "s_out": 1
+    },
+    "arrays_by_loop": {
+      "lp2": {
+        "buff_A": 1,
+        "buff_r": 1,
+        "buff_s_out": 2
+      },
+      "lp4": {
+        "buff_A": 1,
+        "buff_p": 1,
+        "buff_q_out": 2
+      },
+      "lprd_1": {
+        "buff_p": 1,
+        "buff_q_out": 1,
+        "buff_r": 1,
+        "buff_s_out": 1,
+        "p": 1,
+        "r": 1
+      },
+      "lprd_2": {
+        "A": 1,
+        "buff_A": 1
+      },
+      "lpwr": {
+        "buff_q_out": 1,
+        "buff_s_out": 1,
+        "q_out": 1,
+        "s_out": 1
+      }
+    },
+    "dataflow_stage_potential": 1.0,
+    "kernel": "bicg",
+    "loop_count": 7,
+    "loop_depth": 2,
+    "loops": [
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lprd_1",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lprd_2",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lp1",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lp2",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lp3",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lp4",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lpwr",
+        "tripcount": 64
+      }
+    ],
+    "macros": {
+      "N": 64
+    },
+    "main_arrays": [
+      "A",
+      "buff_A",
+      "buff_p",
+      "buff_q_out",
+      "buff_r",
+      "buff_s_out",
+      "p",
+      "q_out",
+      "r",
+      "s_out"
+    ],
+    "matmul_like": 0.0,
+    "max_tripcount": 64,
+    "max_tripcount_log": 4.174387269895637,
+    "source": "D:\\anaconda\\envs\\hlsfactory\\src_polybench\\bicg\\src\\bicg.c",
+    "top_level_stage_count": 4,
+    "total_tripcount_log": 9.437077458800523,
+    "total_tripcount_proxy": 12544,
+    "two_phase_kernel": 1.0
+  },
+  "gemm": {
+    "array_access": {
+      "A": {
+        "access_count": 2,
+        "avg_access_depth": 1.0,
+        "dim": 2,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "B": {
+        "access_count": 2,
+        "avg_access_depth": 1.0,
+        "dim": 2,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "C": {
+        "access_count": 2,
+        "avg_access_depth": 1.0,
+        "dim": 2,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "D_out": {
+        "access_count": 2,
+        "avg_access_depth": 1.0,
+        "dim": 2,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "buff_A": {
+        "access_count": 3,
+        "avg_access_depth": 1.6666666666666667,
+        "dim": 2,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 3
+      },
+      "buff_B": {
+        "access_count": 3,
+        "avg_access_depth": 1.6666666666666667,
+        "dim": 2,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 3
+      },
+      "buff_C": {
+        "access_count": 5,
+        "avg_access_depth": 1.6,
+        "dim": 2,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 2
+      },
+      "tmp1": {
+        "access_count": 5,
+        "avg_access_depth": 2.0,
+        "dim": 2,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 3
+      }
+    },
+    "array_dims": {
+      "A": 2,
+      "B": 2,
+      "C": 2,
+      "D_out": 2,
+      "buff_A": 2,
+      "buff_B": 2,
+      "buff_C": 2,
+      "tmp1": 2
+    },
+    "arrays_by_loop": {
+      "lp3": {
+        "buff_A": 1,
+        "buff_B": 1,
+        "tmp1": 2
+      },
+      "lp5": {
+        "buff_C": 2,
+        "tmp1": 1
+      },
+      "lprd_2": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "buff_A": 1,
+        "buff_B": 1,
+        "buff_C": 1,
+        "tmp1": 1
+      },
+      "lpwr_2": {
+        "D_out": 1,
+        "buff_C": 1
+      }
+    },
+    "dataflow_stage_potential": 1.0,
+    "kernel": "gemm",
+    "loop_count": 9,
+    "loop_depth": 3,
+    "loops": [
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lprd_1",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lprd_2",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lp1",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lp2",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 4,
+        "depth": 3,
+        "header": "k = 0; k < N; k++",
+        "label": "lp3",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lp4",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lp5",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "i = 0; i < N; i++",
+        "label": "lpwr_1",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "j = 0; j < N; j++",
+        "label": "lpwr_2",
+        "tripcount": 64
+      }
+    ],
+    "macros": {
+      "N": 64
+    },
+    "main_arrays": [
+      "A",
+      "B",
+      "C",
+      "D_out",
+      "buff_A",
+      "buff_B",
+      "buff_C",
+      "tmp1"
+    ],
+    "matmul_like": 1.0,
+    "max_tripcount": 64,
+    "max_tripcount_log": 4.174387269895637,
+    "source": "D:\\anaconda\\envs\\hlsfactory\\src_polybench\\gemm\\src\\gemm.c",
+    "top_level_stage_count": 4,
+    "total_tripcount_log": 12.538196154412518,
+    "total_tripcount_proxy": 278784,
+    "two_phase_kernel": 1.0
+  },
+  "gemm_blocked": {
+    "array_access": {
+      "m1": {
+        "access_count": 2,
+        "avg_access_depth": 2.0,
+        "dim": 1,
+        "in_deepest_loop": 0.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 4
+      },
+      "m2": {
+        "access_count": 2,
+        "avg_access_depth": 2.5,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 5
+      },
+      "prod": {
+        "access_count": 2,
+        "avg_access_depth": 2.5,
+        "dim": 1,
+        "in_deepest_loop": 1.0,
+        "is_main_compute_array": 1.0,
+        "max_access_depth": 5
+      }
+    },
+    "array_dims": {
+      "m1": 1,
+      "m2": 1,
+      "prod": 1
+    },
+    "arrays_by_loop": {
+      "loopj": {
+        "m2": 1,
+        "prod": 1
+      },
+      "loopk": {
+        "m1": 1
+      }
+    },
+    "dataflow_stage_potential": 0.0,
+    "kernel": "gemm_blocked",
+    "loop_count": 5,
+    "loop_depth": 5,
+    "loops": [
+      {
+        "brace_depth": 2,
+        "depth": 1,
+        "header": "jj = 0; jj < row_size; jj += block_size",
+        "label": "loopjj",
+        "tripcount": 8
+      },
+      {
+        "brace_depth": 3,
+        "depth": 2,
+        "header": "kk = 0; kk < row_size; kk += block_size",
+        "label": "loopkk",
+        "tripcount": 8
+      },
+      {
+        "brace_depth": 4,
+        "depth": 3,
+        "header": " i = 0; i < row_size; ++i",
+        "label": "loopi",
+        "tripcount": 64
+      },
+      {
+        "brace_depth": 5,
+        "depth": 4,
+        "header": "k = 0; k < block_size; ++k",
+        "label": "loopk",
+        "tripcount": 8
+      },
+      {
+        "brace_depth": 6,
+        "depth": 5,
+        "header": "j = 0; j < block_size; ++j",
+        "label": "loopj",
+        "tripcount": 8
+      }
+    ],
+    "macros": {
+      "MAX_ITERATION": 1,
+      "N": 4096,
+      "NUMOFBLOCKS": 64,
+      "block_size": 8,
+      "col_size": 64,
+      "row_size": 64
+    },
+    "main_arrays": [
+      "m1",
+      "m2",
+      "prod"
+    ],
+    "matmul_like": 1.0,
+    "max_tripcount": 64,
+    "max_tripcount_log": 4.174387269895637,
+    "source": "D:\\anaconda\\envs\\hlsfactory\\src_polybench\\gemm_blocked\\src\\gemm_blocked.c",
+    "top_level_stage_count": 1,
+    "total_tripcount_log": 12.608469718695263,
+    "total_tripcount_proxy": 299080,
+    "two_phase_kernel": 0.0
+  }
+}

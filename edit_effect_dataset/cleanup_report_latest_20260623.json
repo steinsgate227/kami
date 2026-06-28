@@ -1,0 +1,281 @@
+﻿{
+    "cleanup_time":  "2026-06-23T12:17:32",
+    "dataset_dir":  "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset",
+    "keep_count":  26,
+    "deleted_count":  28,
+    "deleted_files":  [
+                          {
+                              "Name":  "build_expanded_edit_effect_dataset.log",
+                              "Length":  682,
+                              "LastWriteTime":  "2026-06-21T20:40:38"
+                          },
+                          {
+                              "Name":  "build_expanded_edit_effect_dataset_rerun_20260622.log",
+                              "Length":  0,
+                              "LastWriteTime":  "2026-06-22T20:50:27"
+                          },
+                          {
+                              "Name":  "build_expanded_edit_effect_dataset_rerun_20260622_v2.log",
+                              "Length":  7138,
+                              "LastWriteTime":  "2026-06-22T21:06:11"
+                          },
+                          {
+                              "Name":  "cleanup_report_20260618.json",
+                              "Length":  2015,
+                              "LastWriteTime":  "2026-06-18T21:12:29"
+                          },
+                          {
+                              "Name":  "merged_results_with_qor.csv",
+                              "Length":  1698545,
+                              "LastWriteTime":  "2026-06-18T20:46:00"
+                          },
+                          {
+                              "Name":  "merge_unique_qor_results.log",
+                              "Length":  1080,
+                              "LastWriteTime":  "2026-06-21T20:12:28"
+                          },
+                          {
+                              "Name":  "qor_expansion_candidates.csv",
+                              "Length":  1004601,
+                              "LastWriteTime":  "2026-06-22T21:12:19"
+                          },
+                          {
+                              "Name":  "qor_expansion_candidates.jsonl",
+                              "Length":  1921194,
+                              "LastWriteTime":  "2026-06-22T21:12:19"
+                          },
+                          {
+                              "Name":  "qor_expansion_completed_ids.txt",
+                              "Length":  6452,
+                              "LastWriteTime":  "2026-06-18T19:59:28"
+                          },
+                          {
+                              "Name":  "qor_expansion_dedup_report.json",
+                              "Length":  5907,
+                              "LastWriteTime":  "2026-06-17T20:55:23"
+                          },
+                          {
+                              "Name":  "qor_expansion_results.csv",
+                              "Length":  352138,
+                              "LastWriteTime":  "2026-06-18T19:59:28"
+                          },
+                          {
+                              "Name":  "qor_merge_report.json",
+                              "Length":  776,
+                              "LastWriteTime":  "2026-06-18T20:46:00"
+                          },
+                          {
+                              "Name":  "qor_unique_completed_ids.txt",
+                              "Length":  17120,
+                              "LastWriteTime":  "2026-06-21T20:11:36"
+                          },
+                          {
+                              "Name":  "qor_unique_run.err.log",
+                              "Length":  0,
+                              "LastWriteTime":  "2026-06-19T01:19:17"
+                          },
+                          {
+                              "Name":  "qor_unique_run.log",
+                              "Length":  0,
+                              "LastWriteTime":  "2026-06-19T01:19:17"
+                          },
+                          {
+                              "Name":  "qor_unique_run_resume_20260620.err.log",
+                              "Length":  0,
+                              "LastWriteTime":  "2026-06-20T00:32:35"
+                          },
+                          {
+                              "Name":  "qor_unique_run_resume_20260620.log",
+                              "Length":  66010,
+                              "LastWriteTime":  "2026-06-20T02:37:21"
+                          },
+                          {
+                              "Name":  "qor_unique_run_resume_20260621.err.log",
+                              "Length":  0,
+                              "LastWriteTime":  "2026-06-21T18:07:29"
+                          },
+                          {
+                              "Name":  "qor_unique_run_resume_20260621.log",
+                              "Length":  41641,
+                              "LastWriteTime":  "2026-06-21T20:11:36"
+                          },
+                          {
+                              "Name":  "strict_edit_effect_experiments_rerun_20260622.log",
+                              "Length":  1726,
+                              "LastWriteTime":  "2026-06-22T21:12:20"
+                          },
+                          {
+                              "Name":  "strict_postprocess_rerun_20260622.log",
+                              "Length":  3850,
+                              "LastWriteTime":  "2026-06-22T21:12:53"
+                          },
+                          {
+                              "Name":  "train_xgboost_expanded_rerun_20260622.log",
+                              "Length":  13536,
+                              "LastWriteTime":  "2026-06-22T21:13:20"
+                          },
+                          {
+                              "Name":  "unique_qor_postprocess_status.json",
+                              "Length":  798,
+                              "LastWriteTime":  "2026-06-21T20:40:38"
+                          },
+                          {
+                              "Name":  "unique_qor_postprocess_status.log",
+                              "Length":  8830,
+                              "LastWriteTime":  "2026-06-21T20:40:38"
+                          },
+                          {
+                              "Name":  "unique_qor_postprocess_watcher.err.log",
+                              "Length":  0,
+                              "LastWriteTime":  "2026-06-20T01:16:57"
+                          },
+                          {
+                              "Name":  "unique_qor_postprocess_watcher.out.log",
+                              "Length":  2979,
+                              "LastWriteTime":  "2026-06-20T02:34:58"
+                          },
+                          {
+                              "Name":  "unique_qor_postprocess_watcher_20260621.err.log",
+                              "Length":  0,
+                              "LastWriteTime":  "2026-06-21T18:09:27"
+                          },
+                          {
+                              "Name":  "unique_qor_postprocess_watcher_20260621.out.log",
+                              "Length":  5927,
+                              "LastWriteTime":  "2026-06-21T20:40:38"
+                          }
+                      ],
+    "remaining_count":  26,
+    "remaining_files":  [
+                            {
+                                "Name":  "all_edit_preferences.jsonl",
+                                "Length":  44022919,
+                                "LastWriteTime":  "\/Date(1782133570292)\/"
+                            },
+                            {
+                                "Name":  "audit_private_target_results.jsonl",
+                                "Length":  13563892,
+                                "LastWriteTime":  "\/Date(1782133570485)\/"
+                            },
+                            {
+                                "Name":  "dataset_card.md",
+                                "Length":  5466,
+                                "LastWriteTime":  "\/Date(1782133939919)\/"
+                            },
+                            {
+                                "Name":  "DATASET_REQUIREMENTS_STATUS.md",
+                                "Length":  28643,
+                                "LastWriteTime":  "\/Date(1782134063888)\/"
+                            },
+                            {
+                                "Name":  "dataset_summary.json",
+                                "Length":  3566,
+                                "LastWriteTime":  "\/Date(1782133570599)\/"
+                            },
+                            {
+                                "Name":  "edit_pattern_label_stats.json",
+                                "Length":  8716,
+                                "LastWriteTime":  "\/Date(1782133570772)\/"
+                            },
+                            {
+                                "Name":  "EXPANDED_DATASET_REPORT.md",
+                                "Length":  289,
+                                "LastWriteTime":  "\/Date(1782133570773)\/"
+                            },
+                            {
+                                "Name":  "gemm_error_analysis.jsonl",
+                                "Length":  36136,
+                                "LastWriteTime":  "\/Date(1782133970733)\/"
+                            },
+                            {
+                                "Name":  "gemm_error_analysis.md",
+                                "Length":  739,
+                                "LastWriteTime":  "\/Date(1782133970736)\/"
+                            },
+                            {
+                                "Name":  "merged_results_with_qor_v2.csv",
+                                "Length":  2529774,
+                                "LastWriteTime":  "\/Date(1782043948883)\/"
+                            },
+                            {
+                                "Name":  "qor_unique_candidate_generation_report.json",
+                                "Length":  1879,
+                                "LastWriteTime":  "\/Date(1781792157707)\/"
+                            },
+                            {
+                                "Name":  "qor_unique_candidates.csv",
+                                "Length":  238133,
+                                "LastWriteTime":  "\/Date(1781792157705)\/"
+                            },
+                            {
+                                "Name":  "qor_unique_merge_report.json",
+                                "Length":  1078,
+                                "LastWriteTime":  "\/Date(1782043948908)\/"
+                            },
+                            {
+                                "Name":  "qor_unique_results.csv",
+                                "Length":  831583,
+                                "LastWriteTime":  "\/Date(1782043896339)\/"
+                            },
+                            {
+                                "Name":  "README.md",
+                                "Length":  624,
+                                "LastWriteTime":  "\/Date(1782133570772)\/"
+                            },
+                            {
+                                "Name":  "rule_verifier_initial.md",
+                                "Length":  867,
+                                "LastWriteTime":  "\/Date(1782133973603)\/"
+                            },
+                            {
+                                "Name":  "strict_eval_report.json",
+                                "Length":  826733,
+                                "LastWriteTime":  "\/Date(1782133939918)\/"
+                            },
+                            {
+                                "Name":  "test_edit_preferences.jsonl",
+                                "Length":  9337683,
+                                "LastWriteTime":  "\/Date(1782133569619)\/"
+                            },
+                            {
+                                "Name":  "train_edit_preferences.jsonl",
+                                "Length":  34685236,
+                                "LastWriteTime":  "\/Date(1782133569488)\/"
+                            },
+                            {
+                                "Name":  "trajectory_seed.jsonl",
+                                "Length":  928562,
+                                "LastWriteTime":  "\/Date(1782133973437)\/"
+                            },
+                            {
+                                "Name":  "trajectory_seed_summary.json",
+                                "Length":  174,
+                                "LastWriteTime":  "\/Date(1782133973438)\/"
+                            },
+                            {
+                                "Name":  "xgboost_edit_effect_feature_importance.json",
+                                "Length":  4769,
+                                "LastWriteTime":  "\/Date(1782134000166)\/"
+                            },
+                            {
+                                "Name":  "xgboost_edit_effect_metrics.json",
+                                "Length":  6765,
+                                "LastWriteTime":  "\/Date(1782134000165)\/"
+                            },
+                            {
+                                "Name":  "xgboost_edit_effect_model.json",
+                                "Length":  375471,
+                                "LastWriteTime":  "\/Date(1782134000173)\/"
+                            },
+                            {
+                                "Name":  "XGBOOST_EDIT_EFFECT_REPORT.md",
+                                "Length":  480,
+                                "LastWriteTime":  "\/Date(1782134000202)\/"
+                            },
+                            {
+                                "Name":  "xgboost_edit_effect_test_predictions.jsonl",
+                                "Length":  902252,
+                                "LastWriteTime":  "\/Date(1782134000201)\/"
+                            }
+                        ]
+}

@@ -1,0 +1,94 @@
+{
+  "by_a_status": {
+    "EXCEEDED": {
+      "examples": 58,
+      "flip_consistency": 0.8103,
+      "prediction_flip_rate": 0.2069
+    },
+    "FAILED": {
+      "examples": 56,
+      "flip_consistency": 0.8214,
+      "prediction_flip_rate": 0.1071
+    },
+    "SUCCESS": {
+      "examples": 3,
+      "flip_consistency": 1.0,
+      "prediction_flip_rate": 0.0
+    },
+    "TIMEOUT": {
+      "examples": 23,
+      "flip_consistency": 1.0,
+      "prediction_flip_rate": 0.3913
+    }
+  },
+  "by_kernel": {
+    "atax": {
+      "examples": 16,
+      "flip_consistency": 0.875,
+      "prediction_flip_rate": 0.25
+    },
+    "bicg": {
+      "examples": 30,
+      "flip_consistency": 1.0,
+      "prediction_flip_rate": 0.1667
+    },
+    "gemm": {
+      "examples": 94,
+      "flip_consistency": 0.7979,
+      "prediction_flip_rate": 0.1915
+    }
+  },
+  "by_pressure_tag": {
+    "BRAM_overflow": {
+      "examples": 37,
+      "flip_consistency": 0.7568,
+      "prediction_flip_rate": 0.1081
+    },
+    "DSP_overflow": {
+      "examples": 53,
+      "flip_consistency": 0.8113,
+      "prediction_flip_rate": 0.1509
+    },
+    "FF_high": {
+      "examples": 8,
+      "flip_consistency": 0.625,
+      "prediction_flip_rate": 0.0
+    },
+    "FF_overflow": {
+      "examples": 17,
+      "flip_consistency": 0.8824,
+      "prediction_flip_rate": 0.4706
+    },
+    "LUT_high": {
+      "examples": 8,
+      "flip_consistency": 0.75,
+      "prediction_flip_rate": 0.125
+    },
+    "LUT_overflow": {
+      "examples": 42,
+      "flip_consistency": 0.8095,
+      "prediction_flip_rate": 0.2619
+    },
+    "latency_high": {
+      "examples": 38,
+      "flip_consistency": 0.7632,
+      "prediction_flip_rate": 0.1053
+    },
+    "resource_room": {
+      "examples": 80,
+      "flip_consistency": 0.875,
+      "prediction_flip_rate": 0.1875
+    }
+  },
+  "changes_loaded": 140,
+  "changes_matched_to_pairs": 140,
+  "changes_missing_pair_metadata": 0,
+  "note": "Breakdown uses all_changes when present; falls back to sample_changes only for old reports.",
+  "overall": {
+    "avg_abs_probability_delta_after_swap": 0.2143,
+    "examples_checked": 140,
+    "flip_consistency": 0.85,
+    "prediction_flip_rate": 0.1929
+  },
+  "source": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_causal_flip_report.json"
+}

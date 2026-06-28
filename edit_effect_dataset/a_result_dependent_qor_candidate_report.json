@@ -1,0 +1,77 @@
+{
+  "checked_variants": 3487,
+  "dedup_signature": [
+    "kernel",
+    "pipeline_on",
+    "pipeline_II",
+    "unroll_factor",
+    "normalized partition_details",
+    "dataflow"
+  ],
+  "existing_unique_signatures": 1097,
+  "output_csv": "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_dependent_qor_candidates.csv",
+  "purpose": "Non-duplicate SUCCESS-seed local perturbations for A_result-dependent QoR; intended to synthesize one-by-one and later label by latency/resource/Pareto outcome.",
+  "selected_by_kernel": {
+    "atax": 120,
+    "bicg": 120,
+    "gemm": 182,
+    "gemm_blocked": 220
+  },
+  "selected_by_kernel_pressure": {
+    "atax/resource_room": 120,
+    "bicg/resource_room": 120,
+    "gemm/medium_pressure": 54,
+    "gemm/near_limit": 128,
+    "gemm_blocked/resource_room": 220
+  },
+  "selected_by_template": {
+    "dataflow_false": 68,
+    "dataflow_true": 55,
+    "partition_block_16": 62,
+    "partition_block_2": 64,
+    "partition_block_4": 66,
+    "partition_block_8": 64,
+    "partition_cyclic_16": 16,
+    "partition_cyclic_2": 36,
+    "partition_cyclic_4": 15,
+    "partition_cyclic_8": 14,
+    "partition_scale_0.5": 32,
+    "partition_scale_2": 38,
+    "unroll_decrease_to_1": 12,
+    "unroll_decrease_to_2": 13,
+    "unroll_increase_to_16": 18,
+    "unroll_increase_to_2": 8,
+    "unroll_increase_to_32": 30,
+    "unroll_increase_to_4": 12,
+    "unroll_increase_to_64": 10,
+    "unroll_increase_to_8": 9
+  },
+  "selected_candidates": 642,
+  "skipped_duplicate_candidate_signature": 827,
+  "skipped_existing_signature": 2018,
+  "source_csvs": {
+    "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_candidates.csv": 340,
+    "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\a_result_targeted_results.csv": 178,
+    "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\merged_results_with_qor_v2.csv": 1348,
+    "D:\\anaconda\\envs\\hlsfactory\\edit_effect_dataset\\qor_unique_results.csv": 480,
+    "D:\\anaconda\\envs\\hlsfactory\\manifests\\merged_manifests_with_results.csv": 802
+  },
+  "success_seed_rows": 453,
+  "success_seed_rows_by_kernel": {
+    "atax": 84,
+    "bicg": 61,
+    "gemm": 43,
+    "gemm_blocked": 265
+  },
+  "success_seed_rows_by_pressure": {
+    "medium_pressure": 20,
+    "near_limit": 23,
+    "resource_room": 410
+  },
+  "target_per_kernel": {
+    "atax": 120,
+    "bicg": 120,
+    "gemm": 220,
+    "gemm_blocked": 220
+  }
+}
